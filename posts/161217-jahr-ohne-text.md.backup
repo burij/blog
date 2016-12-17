@@ -2,9 +2,11 @@
 Tags = [""]
 Description = ""
 title = "Das war ein Jahr ohne Text"
+layout: post
 date = "2016-12-17T09:30:27+01:00"
 menu = "main"
 Categories = ["Berichte", "Einführungen"]
+
 
 +++
 
@@ -16,9 +18,9 @@ Manchmal braucht es nicht viel. In diesem war, wie so oft bei mir, war der Impul
 
 Womöglich sind technische Gründe auch nur vorgeschoben. Und eigentlich geht es darum, dass Dinge passiert sind, die ich aufarbeiten muss. Zwischen den Jahren findet man immer ein Paar Minuten hierfür.
 
-Das Jahr war selten anstrengend und scheiße. Jetzt werde ich mich noch kurz auf das Positive konzentrieren (es ist eine Drohung). Leeni, Simo und ich sind noch gesund und viel Musik gab es auch. Die Beschäftigung mit der Musik hat mich 2016 sehr erfühlt und die meisten anderen Hobbys gekostet. Die Zeit ist eben knapp und zu schnell weg.
+Das Jahr war selten anstrengend und scheiße. Jetzt werde ich mich noch kurz auf das Positive konzentrieren (es ist eine Drohung). Leeni, Simo und ich sind noch gesund und viel Musik gab es auch. Die Beschäftigung mit der Musik hat mir einiges gegeben und die meisten anderen Hobbys gekostet. Die Zeit ist eben knapp und zu schnell weg.
 
-Apropos Technik: um den Blog von Wordpress zu Hugo zu migrieren, habe ich einen [Bitnami](https://bitnami.com/stack/wordpress)-Container eingesetzt. Cool oder?
+Apropos Technik: um den Blog von Wordpress zu Hugo zu migrieren, habe ich zum ersten Mal einen [Bitnami](https://bitnami.com/stack/wordpress)-Container eingesetzt. Cool oder?
 
 An dieser Stelle höre ich mal auf zu schreiben. Es reicht für den Wiedereinstieg. Schön Druck drauf lassen. Stattdessen kümmere ich mich mal um die Blog-Bilder. Die Pfade gehen nämlich beim Export leider flöten. 
 
