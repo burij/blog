@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Linux &#8211; buriversum</title>
+<meta name="description" content="">
+
+    
+
+
+
+
+
+<meta name="twitter:title" content="Linux">
+<meta name="twitter:description" content="minimalistische Persönlichkeitszentrale">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:description" content="minimalistische Persönlichkeitszentrale">
+<meta property="og:url" content="https://burij.github.io/blog/categories/linux/">
+<meta property="og:site_name" content="buriversum">
+
+
+
+  <meta property="og:updated_time" content="2015-08-18T18:06:00&#43;00:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://burij.github.io/blog/categories/linux/">
+
+  <link href="https://burij.github.io/blog/categories/linux/index.xml" rel="alternate" type="application/rss+xml" title="buriversum" />
+  <link href="https://burij.github.io/blog/categories/linux/index.xml" rel="feed" type="application/rss+xml" title="buriversum" />
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<meta name="generator" content="Hugo 0.17" />
+
+<script src="/blog/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<link rel="shortcut icon" href="/blog/favicon.png">
+
+
+</head>
+
+<body id="post-index" >
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/blog/">buriversum</a></li>
+		<li>
+			<a href="#">Info</a>
+			<ul class="dl-submenu">
+			
+				<li>
+					
+					<img src="https://pbs.twimg.com/profile_images/750427486727639040/tKGND85j.jpg" alt="burij's photo" class="author-photo">
+					
+					<h4>burij</h4>
+					<p>trapped in own happits</p>
+				</li>
+				<li><a href="/blog/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="https://twitter.com/burij"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</ul>
+		</li>
+		<li>
+			<a href="#">Artikel</a>
+			<ul class="dl-submenu">
+				<li><a href="/blog/posts/">Neuste Artikel</a></li>
+				<li><a href="/blog/tags/">Alle Tags</a></li>
+				<li><a href="/blog/categories/">Alle Kategorien</a></li>
+			</ul>
+		</li>
+		
+	    <li><a href="http://burij.de" target="_blank">burij.de</a></li>
+	  
+	</ul>
+</nav>
+
+<div class="entry-header">
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+		<h1><a href="/" title="Go to the homepage">buriversum</a></h1>
+	  <h2>
+            
+            
+              Linux
+            
+          </h2>
+    </div>
+  </div>
+</div>
+
+<div id="main" role="main">
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2015-08-18 18:06:00 &#43;0000 &#43;0000"><a href="/blog/2015/08/18/leenux-suite-6-3/">Aug 18, 2015</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~4 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2015/08/18/leenux-suite-6-3/" rel="bookmark" title="Leenux Suite 6.3" itemprop="url">Leenux Suite 6.3</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<p>Ab der Version 5.0 läuft unter der Haube von Leenux Suite Arch. Antergos genauer gesagt. Um Antergos auf einen USB Stick zu bekommen macht man Folgendes:</p>
+
+<p><code>cd Downloads&lt;br /&gt;
+sudo dd if=antergos.iso of=/dev/sdx &amp;&amp; sync</code></p>
+
+<p>Zunächst müssen für mein Think Pad S440 einige Vorbereitungen getroffen werden.</p>
+
+<h5 id="weniger-nachfragen-von-yourt">WENIGER NACHFRAGEN VON YOURT</h5>
+
+<p><code>sudo gedit /etc/yaourtrc</code></p>
+
+<p>ändern und unkommentieren:</p>
+
+<p><code>BUILD_NOCONFIRM=1&lt;br /&gt;
+EDITFILES=0</code></p>
+
+<h6 id="enable-multilib-repository">ENABLE MULTILIB REPOSITORY</h6>
+
+<p><code>sudo gedit /etc/pacman.conf</code></p>
+
+<p>und Folgendes unkommentieren:</p>
+
+<p><code>[multilib]&lt;br /&gt;
+SigLevel = PackageRequired&lt;br /&gt;
+Include = /etc/pacman.d/mirrorlist&lt;br /&gt;
+sudo pacman -Syu&lt;br /&gt;
+yaourt -S gcc-multilib</code></p>
+
+<h6 id="enable-gdm">ENABLE GDM</h6>
+
+<p><code>yaourt -S gdm&lt;br /&gt;
+sudo systemctl disable lightdm.service&lt;br /&gt;
+sudo systemctl enable gdm</code></p>
+
+<h6 id="deckelverhalten">DECKELVERHALTEN</h6>
+
+<p><code>HandleLidSwitch=ignore</code></p>
+
+<h6 id="update">UPDATE</h6>
+
+<p><code>yaourt -Syua&lt;br /&gt;
+sudo pacman -Syu</code></p>
+
+<p>Im Gegensatz zu auf Debian-basierten Systemen macht es bei Arch Sinn so wenig Software zu installieren, wie möglich. Darum wird Leenux Suite nun in 3 Ausbaustufen angeboten:</p>
+
+<h6 id="minimal">MINIMAL:</h6>
+
+<p><code>yaourt -S google-chrome menulibre smbclient gparted owncloud-client gimp gimp-plugin-registry inkscape agave gimp-extras vlc dropbox nautilus-dropbox gdmap</code></p>
+
+<h6 id="basic">BASIC:</h6>
+
+<p><code>yaourt -S freefilesync playonlinux virtualbox focuswriter libreoffice pdfmod typecatcher rawtherapee kdegraphics-okular easytag soundconverter pyrenamer mp3gain audacity handbrake easymp3gain-gtk2 rhythmbox-git masterpdfeditor scribus filezilla typecatcher virtualbox-host-modules nss-mdns hunspell hunspell-en hunspell-de gnome-shell-extension-topicons gnome-user-share numix-circle-icon-theme-git ttf-ms-fonts variety</code></p>
+
+<h6 id="extensions">EXTENSIONS:</h6>
+
+<p><code>yaourt -S gnome-calendar&lt;br /&gt;
+yaourt -S unetbootin&lt;br /&gt;
+yaourt -S ipad-charge-git&lt;br /&gt;
+yaourt -S kdebase-dolphin&lt;br /&gt;
+yaourt -S grive-tools grive&lt;br /&gt;
+yaourt -S samba gvfs-smb&lt;br /&gt;
+yaourt -S liferea&lt;br /&gt;
+yaourt -S calibre&lt;br /&gt;
+yaourt -S shotwell&lt;br /&gt;
+yaourt -S josm&lt;br /&gt;
+yaourt -S mypaint&lt;br /&gt;
+yaourt -S freemind&lt;br /&gt;
+yaourt -S mixxx&lt;br /&gt;
+yaourt -S openshot-bzr&lt;br /&gt;
+yaourt -S lmms&lt;br /&gt;
+yaourt -S blender&lt;br /&gt;
+yaourt -S avidemux&lt;br /&gt;
+yaourt -S gpodder-git&lt;br /&gt;
+yaourt -S mediathek&lt;br /&gt;
+yaourt -S teamviewer&lt;br /&gt;
+yaourt -S epiphany&lt;br /&gt;
+yaourt -S spotify&lt;br /&gt;
+yaourt -S jdownloader2 tor-browser-en&lt;br /&gt;
+yaourt -S skype&lt;br /&gt;
+yaourt -S acroread acroread-fonts lib32-gtk-engine-murrine lib32-libcanberra&lt;br /&gt;
+yaourt -S gnome-packagekit&lt;br /&gt;
+yaourt -S california&lt;br /&gt;
+yaourt -S corebird&lt;br /&gt;
+yaourt -S atom-editor&lt;br /&gt;
+yaourt -S ocenaudio&lt;br /&gt;
+yaourt -S vco-plugins tap-plugins swh-plugins rev-plugins mcp-plugins&lt;br /&gt;
+yaourt -S yandex-disk&lt;br /&gt;
+yaourt -S bluefish&lt;br /&gt;
+yaourt -S draftsight&lt;br /&gt;
+yaourt -S geary&lt;br /&gt;
+yaourt -S opera&lt;br /&gt;
+yaourt -S gitg-git libgit2-git libgit2-glib-git&lt;br /&gt;
+yaourt -S xfburn&lt;br /&gt;
+yaourt -S calise-git</code></p>
+
+<p>Anschließend müssen einige Nachbereitungen erfolgt werden:</p>
+
+<h6 id="powermanagement-für-laptops">POWERMANAGEMENT FÜR LAPTOPS</h6>
+
+<p><code>yaourt -S tlp&lt;br /&gt;
+systemctl enable tlp.service&lt;br /&gt;
+sudo gedit /etc/default/tlp&lt;br /&gt;
+DEVICES_TO_DISABLE_ON_STARTUP=&quot;bluetooth&quot;</code></p>
+
+<h6 id="nautilus-als-default-filemanager">NAUTILUS ALS DEFAULT FILEMANAGER</h6>
+
+<p><code>xdg-mime default org.gnome.Nautilus.desktop inode/directory</code></p>
+
+<h6 id="dns-server-von-google-nutzen-statt-dem-vom-provider">DNS-SERVER VON GOOGLE NUTZEN, STATT DEM VOM PROVIDER</h6>
+
+<p><code>8.8.8.8, 8.8.4.4 für IPv4</code></p>
+
+<p>und</p>
+
+<p><code>2001:4860:4860::8888, 2001:4860:4860::8844 für IPv6</code></p>
+
+<p>Bei der Methode muss dann noch auf »Automatisch, nur Adressen« umgestellt werden. Jetzt wurde ich die Zensur zugunsten stärkerer Überwachung los.</p>
+
+<h6 id="entf-taste-für-das-verschieben-in-papierkorb">ENTF-TASTE FÜR DAS VERSCHIEBEN IN PAPIERKORB</h6>
+
+<p>By default, Files no longer uses the delete key to move files to trash. To revert this, use:</p>
+
+<p><code>gedit .config/nautilus/accels&lt;br /&gt;
+;(gtk_accel_path &quot;&lt;Actions&gt;/DirViewActions/Trash&quot; &quot;&lt;Primary&gt;Delete&quot;)</code></p>
+
+<p>ändern in</p>
+
+<p><code>(gtk_accel_path &quot;&lt;Actions&gt;/DirViewActions/Trash&quot; &quot;Delete&quot;)</code></p>
+
+<h6 id="printer-zum-leben-erwecken">PRINTER ZUM LEBEN ERWECKEN</h6>
+
+<p><code>sudo usermod -aG sys burij&lt;br /&gt;
+yaourt -Rdd hplip foomatic-db foomatic-db-engine&lt;br /&gt;
+systemctl enable org.cups.cupsd.service&lt;br /&gt;
+systemctl enable avahi-daemon.service&lt;br /&gt;
+sudo gedit /etc/nsswitch.conf&lt;br /&gt;
+hosts: files dns myhostname mdns</code></p>
+
+<h6 id="nvidia-treiber-installieren">NVIDIA-TREIBER INSTALLIEREN</h6>
+
+<p>PackmanXG öffnen</p>
+
+<p>&#8220;Package Manager&#8221;</p>
+
+<p>Suchen: &#8220;nouveau&#8221;</p>
+
+<p>Entfernen &#8220;nouveau-dri&#8221; and &#8220;xf86-video-nouveau&#8221;</p>
+
+<p>Suchen und auswählen &#8220;linux-headers&#8221;</p>
+
+<p>Scuhen &#8220;nvidia&#8221;</p>
+
+<p>Passenden Treiber und &#8220;nvidia-utils&#8221; auswählen</p>
+
+<p>Ausführen</p>
+
+<p>nVidia X-Server Settings&#8221; starten, um eine automatische Konfigurationsdatei zu schreiben</p>
+
+<h6 id="virtualbox-zum-laufen-bringen">VIRTUALBOX ZUM LAUFEN BRINGEN</h6>
+
+<p><code>sudo gpasswd -a $USER vboxusers&lt;br /&gt;
+sudo modprobe vboxdrv&lt;br /&gt;
+sudo gedit /etc/modules-load.d/virtualbox.conf</code></p>
+
+<p>einfügen</p>
+
+<p><code>vboxdrv&lt;br /&gt;
+vboxnetadp&lt;br /&gt;
+vboxnetflt&lt;br /&gt;
+vboxpci</code></p>
+
+<h6 id="splash-screen-und-hibernate-aktivieren">SPLASH-SCREEN und HIBERNATE AKTIVIEREN</h6>
+
+<p><code>yaourt -S plymouth&lt;br /&gt;
+sudo gedit /etc/default/grub&lt;br /&gt;
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;resume=swap_partition quiet splash&quot;&lt;br /&gt;
+sudo gedit /etc/mkinitcpio.conf&lt;br /&gt;
+MODULES=&quot;i915&quot;&lt;br /&gt;
+HOOKS=&quot;[...] udev plymouth resume [...]&lt;br /&gt;
+sudo mkinitcpio -p linux&lt;br /&gt;
+systemctl disable lightdm.service&lt;br /&gt;
+systemctl enable lightdm-plymouth.service&lt;br /&gt;
+yaourt -S plymouth-theme-paw-arch&lt;br /&gt;
+sudo gedit /etc/plymouth/plymouthd.conf&lt;br /&gt;
+ShowDelay=0&lt;br /&gt;
+sudo plymouth-set-default-theme -R paw-arch&lt;br /&gt;
+sudo grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+
+<h6 id="dropbox-3-0-4-installieren">DROPBOX 3.0.4 INSTALLIEREN</h6>
+
+<p><code>cd ~&lt;br /&gt;
+wget https://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-3.0.4.tar.gz&lt;br /&gt;
+tar -xvf dropbox-lnx.x86_64-3.0.4.tar.gz&lt;br /&gt;
+~/.dropbox-dist/dropboxd</code></p>
+
+<h6 id="netzwerkprobleme">NETZWERKPROBLEME</h6>
+
+<p><code>yaourt -S dhclient</code></p>
+
+<h6 id="microsoft-kompabilität">MICROSOFT KOMPABILITÄT</h6>
+
+<p><code>yaourt -S icoutils libwbclient libxslt lib32-mpg123 p11-kit lib32-p11-kit samba wine winetricks wine-mono wine_gecko ttf-ms-fonts lib32-libwbclient lib32-libxslt</code></p>
+
+<h6 id="flat-styles">FLAT-STYLES</h6>
+
+<p><code>yaourt -S paper-gtk-theme-git paper-icon-theme-git circle-flat-icons-git gtk-theme-arc-git breeze-icons</code></p>
+
+<h6 id="grub-reparieren">GRUB REPARIEREN</h6>
+
+<p>In einer Live-Umgebung:</p>
+
+<p><code>sudo su&lt;br /&gt;
+lsblk -f&lt;br /&gt;
+mount /dev/[system-Partition] /mnt&lt;br /&gt;
+cd /mnt&lt;br /&gt;
+mount -t proc proc /mnt/proc&lt;br /&gt;
+mount -t sysfs sys /mnt/sys&lt;br /&gt;
+mount -o bind /dev /mnt/dev&lt;br /&gt;
+mount -t devpts pts /mnt/dev/pts/&lt;br /&gt;
+chroot /mnt&lt;br /&gt;
+pacman -S os-prober&lt;br /&gt;
+grub-install /dev/sda&lt;br /&gt;
+grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+
+<h6 id="login-manager-ändern">LOGIN-MANAGER ÄNDERN</h6>
+
+<p><code>yaourt -S lightdm-pantheon-greeter&lt;br /&gt;
+sudo gedit /etc/lightdm/lightdm.com&lt;br /&gt;
+greeter-session=lightdm-webkit2-greeter</code></p>
+
+<p>ändern in</p>
+
+<p><code>greeter-session=lightdm-pantheon-greeter</code></p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-09-10 18:36:09 &#43;0000 &#43;0000"><a href="/blog/2014/09/10/dns-server-andern/">Sep 10, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/09/10/dns-server-andern/" rel="bookmark" title="DNS-Server von Google nutzen" itemprop="url">DNS-Server von Google nutzen</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Es sieht so aus, dass mein Internetprovider einige harmlose Dienste blockt. Aufgefallen ist es mir dadurch, dass ich von Zuhause aus nicht die Outlook Web App erreichen konnte. Allerdings war zum Teil auch wordpress.com geblockt. Nach einigen Monaten erfolgloser Problemsuche konnte ich es dann identifizieren: mit Tor geht es, bei der Arbeit geht es, es muss also am Internetanschluss liegen.</p>
+
+<p>Problemlösung ist einfach. DNS-Server von Google nutzen, statt dem vom Provider:</p>
+
+<p><code>8.8.8.8, 8.8.4.4</code> für IPv4</p>
+
+<p>und</p>
+
+<p><code>2001:4860:4860::8888, 2001:4860:4860::8844</code> für IPv6</p>
+
+<p>Bei der Methode muss dann noch auf »Automatisch, nur Adressen« umgestellt werden. Jetzt wurde ich die Zensur zugunsten stärkerer Überwachung los.</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-08-09 12:26:46 &#43;0000 &#43;0000"><a href="/blog/2014/08/09/leenux-suite-4-1/">Aug 9, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~2 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/08/09/leenux-suite-4-1/" rel="bookmark" title="Leenux Suite 4.1" itemprop="url">Leenux Suite 4.1</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<h3 id="source-stack">Source Stack</h3>
+
+<p><code>sudo add-apt-repository -y ppa:jd-team/jdownloader &amp;&amp; sudo add-apt-repository -y ppa:webupd8team/themes &amp;&amp; sudo add-apt-repository -y ppa:libreoffice/ppa &amp;&amp; sudo apt-add-repository -y ppa:michael-gruz/canon-trunk &amp;&amp; sudo add-apt-repository -y ppa:noobslab/themes &amp;&amp; sudo add-apt-repository -y ppa:noobslab/icons &amp;&amp; sudo add-apt-repository -y ppa:andrewsomething/typecatcher &amp;&amp; sudo add-apt-repository -y ppa:teejee2008/ppa &amp;&amp; sudo add-apt-repository -y ppa:satyajit-happy/themes &amp;&amp; sudo add-apt-repository -y ppa:webupd8team/tor-browser &amp;&amp; sudo apt-add-repository -y ppa:freefilesync/ffs &amp;&amp; sudo add-apt-repository -y ppa:nilarimogard/webupd8 &amp;&amp; sudo add-apt-repository -y ppa:thefanclub/grive-tools &amp;&amp; sudo apt-add-repository -y ppa:webupd8team/y-ppa-manager &amp;&amp; sudo apt-get update &amp;&amp; sudo add-apt-repository -y ppa:moka/stable &amp;&amp; sudo add-apt-repository -y ppa:noobslab/apps</code></p>
+
+<h3 id="system-stack">System Stack</h3>
+
+<p><code>sudo apt-get install gnome-shell-extensions epiphany-browser synaptic gdebi lm-sensors gparted ubuntu-restricted-extras aptitude gdmap unetbootin alacarte libav-tools nautilus-dropbox gwibber p7zip-full p7zip-rar rar unrar filezilla jdownloader uck libfribidi-bin tor-browser freefilesync ipad-charge icedtea-7-plugin dolphin systemsettings grive-tools grive gnome-packagekit y-ppa-manager aptik liferea uck libfribidi-bin unity gnome-weather gnome-shell-extension-weather bijiben gnome-clocks gnome-maps gnome-session plymouth-theme-ubuntu-gnome-logo</code></p>
+
+<h3 id="publish-bundle">Publish Bundle</h3>
+
+<p><code>sudo apt-get install focuswriter libreoffice calibre bluefish gimp gimp-data-extras gimp-plugin-registry inkscape scribus josm mypaint pdfmod qgis typecatcher okular libreoffice-style-crystal libreoffice-gnome freemind rawtherapee agave</code></p>
+
+<h3 id="studio-bundle">Studio Bundle</h3>
+
+<p><code>sudo apt-get install easytag soundconverter pyrenamer mp3gain easymp3gain-gtk mixxx audacity openshot lmms blender avidemux vlc browser-plugin-vlc mediathekview gpodder handbrake gstreamer0.10-tools libgstreamer0.10-0 libxvidcore4 gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer0.10-plugins-bad-multiverse gstreamer0.10-alsa gstreamer0.10-fluendo-mp3 arista</code></p>
+
+<h3 id="appearance-bundle">Appearance Bundle</h3>
+
+<p><code>sudo apt-get install moka-icon-theme moka-gtk-theme gnome-shell-theme-elegance-colors faba-icon-theme faba-icon-theme-symbolic faba-mono-icons faba-colors moka-gnome-shell-theme libreoffice-style-sifr light-themes orchis-gtk-theme stark-gtk-theme kde-wallpapers ubuntustudio-wallpapers xubuntu-wallpapers mate-backgrounds</code></p>
+
+<h3 id="enterprice-stack">Enterprice Stack</h3>
+
+<p>Google: <a href="http://www.google.de/intl/de/chrome/browser/">http://www.google.de/intl/de/chrome/browser/</a></p>
+
+<p>virtualbox: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+
+<p>DraftSight: <a href="http://www.draftsight.com/download-linux-ubuntu">http://www.draftsight.com/download-linux-ubuntu</a></p>
+
+<p>skype: <a href="http://www.skype.com/de/download-skype/skype-for-computer/">http://www.skype.com/de/download-skype/skype-for-computer/</a></p>
+
+<p>Wuala: <a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb</a></p>
+
+<p>TeamViewer: <a href="http://download.teamviewer.com/download/teamviewer_linux.deb">http://download.teamviewer.com/download/teamviewer_linux.deb</a></p>
+
+<p>Google Web Designer: <a href="https://www.google.com/webdesigner/">https://www.google.com/webdesigner/</a></p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-06-29 15:58:09 &#43;0000 &#43;0000"><a href="/blog/2014/06/29/natural-scrolling-fur-die-maus/">Jun 29, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/06/29/natural-scrolling-fur-die-maus/" rel="bookmark" title="Natural scrolling für die Maus" itemprop="url">Natural scrolling für die Maus</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Seit Gnome 3.8 oder so lässt sich in den Einstellungen für Touchpad das natural scrolling einstellen. Allerdings nicht für die Maus. Möchte man das umgekehrte Scrolling auch für die Maus haben, so lässt es sich mit dem folgenden Terminalbefehl einstellen</p>
+
+<p><code>xmodmap -e &quot;pointer = 1 2 3 5 4&quot;</code></p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-21 13:58:55 &#43;0000 &#43;0000"><a href="/blog/2014/04/21/leenux-suite-4-0-2-fur-bestandssysteme/">Apr 21, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~2 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/21/leenux-suite-4-0-2-fur-bestandssysteme/" rel="bookmark" title="Leenux Suite 4.0.2 für Bestandssysteme" itemprop="url">Leenux Suite 4.0.2 für Bestandssysteme</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<h3 id="source-stack-4-0">Source Stack 4.0</h3>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<h3 id="system-stack-4-0-1">System Stack 4.0.1</h3>
+
+<p><code>sudo apt-get install gnome-shell-extensions epiphany-browser synaptic gdebi lm-sensors gparted ubuntu-restricted-extras aptitude gdmap unetbootin alacarte libav-tools nautilus-dropbox gwibber p7zip-full p7zip-rar rar unrar filezilla jdownloader uck libfribidi-bin tor-browser freefilesync ipad-charge icedtea-7-plugin dolphin systemsettings grive-tools grive gnome-packagekit y-ppa-manager aptik liferea uck libfribidi-bin</code></p>
+
+<h3 id="publish-bundle-4-0-1">Publish Bundle 4.0.1</h3>
+
+<p>``### Source Stack 4.0</p>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<h3 id="system-stack-4-0-1-1">System Stack 4.0.1</h3>
+
+<p><code>sudo apt-get install gnome-shell-extensions epiphany-browser synaptic gdebi lm-sensors gparted ubuntu-restricted-extras aptitude gdmap unetbootin alacarte libav-tools nautilus-dropbox gwibber p7zip-full p7zip-rar rar unrar filezilla jdownloader uck libfribidi-bin tor-browser freefilesync ipad-charge icedtea-7-plugin dolphin systemsettings grive-tools grive gnome-packagekit y-ppa-manager aptik liferea uck libfribidi-bin</code></p>
+
+<h3 id="publish-bundle-4-0-1-1">Publish Bundle 4.0.1</h3>
+
+<p>``</p>
+
+<h3 id="studio-bundle-4-0-2">Studio Bundle 4.0.2</h3>
+
+<p><code>sudo apt-get install easytag soundconverter pyrenamer mp3gain easymp3gain-gtk mixxx audacity openshot lmms blender avidemux vlc browser-plugin-vlc mediathekview gpodder</code></p>
+
+<h3 id="appearance-bundle-4-0">Appearance Bundle 4.0</h3>
+
+<p><code>sudo apt-get install moka-icon-theme moka-gtk-theme gnome-shell-theme-elegance-colors faba-icon-theme faba-icon-theme-symbolic faba-mono-icons faba-colors moka-gnome-shell-theme libreoffice-style-sifr</code></p>
+
+<h3 id="enterprice-stack-4-0">Enterprice Stack 4.0</h3>
+
+<p><a href="http://www.google.de/intl/de/chrome/browser/">google-chrome-stable</a></p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></p>
+
+<p><a href="http://www.draftsight.com/download-linux-ubuntu">DraftSight</a></p>
+
+<p><a href="http://www.skype.com/de/download-skype/skype-for-computer/">skype</a></p>
+
+<p><a href="https://github.com/Nano77/gdm3setup">GDM3Setup</a></p>
+
+<p><a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">Wuala</a></p>
+
+<h3 id="testing-bundle-4-0-1">Testing Bundle 4.0.1</h3>
+
+<p><code>sudo add-apt-repository ppa:takkat-nebuk/takkat&lt;br /&gt;
+sudo apt-get install stream2ip-gtk3</code></p>
+
+<h3 id="ruhe-tweak">Ruhe-Tweak</h3>
+
+<p><code>sudo gedit /etc/default/apport</code></p>
+
+<p><code>enabled=1</code> ändern in <code>enabled=0</code></p>
+
+<p>&nbsp;</p>
+
+<h3 id="bildschirmhelligkeit">Bildschirmhelligkeit</h3>
+
+<p>Regeln der Bildschirmhelligkeit sollte funktionieren sobald dem Kernel acpi_osi=Linux acpi_backlight=legacy als Parameter übergeben wird:</p>
+
+<p><code>sudo gedit /etc/default/grub</code></p>
+
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;</code></p>
+
+<p>ändern zu</p>
+
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash acpi_osi=Linux acpi_backlight=legacy&quot;</code></p>
+
+<p>dann</p>
+
+<p><code>sudo update-grub</code></p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-21 13:06:16 &#43;0000 &#43;0000"><a href="/blog/2014/04/21/leenux-4-0-1-testing/">Apr 21, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~3 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/21/leenux-4-0-1-testing/" rel="bookmark" title="Leenux 4.0.1 Testing" itemprop="url">Leenux 4.0.1 Testing</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<p>Ok. Eben <a href="https://burij.wordpress.com/2014/04/18/leenux-suite-4-0-building/" title="Leenux Suite 4.0 Building">fertiggebaut</a>. Jetzt ist der Adrenalinspiegel wirklich hoch. Getestet wird in mehreren Stufen. Ich taste mich langsam ran. UCK legt die fertige iso in <code>/home/user/tmp/remaster-new-files/</code> ab. Die Datei ist ordentlich (2,2 GB) schwer.</p>
+
+<h3 id="schritt-1-liveboot-in-der-virtuellen-maschine">Schritt 1: Liveboot in der virtuellen Maschine</h3>
+
+<p>Habe scheinbar eine alte Version von VirtualBox. Werde dann erst updaten. Lege für das Testing eine Maschine mit 1 GB RAM und 15 GB Speicher&#8230;. Icons sind zu sehen&#8230; Ubuntu Gnome Startscreen, meine Maschine strengt sich an und friert für ne weile ein. Dann schwarzer Bildschirm und nach einer gefühlten Ewigkeit sehe ich Panel und einen Installationsdialog. Ich wähle &#8220;Ubuntu Gnome Ausprobieren&#8221; aus. Tatsächlich startet die Live Session. Richtige Gnome-Shell Erweiterungen sind aktiviert, die Software scheint da zu sein, Icons, die ich haben wollte, sind eingestellt. Nur Desktop ist schwarz. Aber das ist ok, sieht fast cool aus. Ich starte Nautilus, Theme ist dunkel, wie es sein sollte, Gnome 3.10 sieht richtig geil aus. Ich denke, dass es mit dem nächsten Schritt weitergehen kann.</p>
+
+<h3 id="schritt-2-installation-in-der-virtuellen-maschine">Schritt 2: Installation in der virtuellen Maschine</h3>
+
+<p>Starte die virtuelle Maschine neu. Diesmal wähle ich &#8220;Installieren&#8221; aus. Die Installation wird wohl ein wenig dauern. Währenddessen räume ich mal die Küche auf. Die Installation läuft problemlos durch. Neustart. Anmeldebildschirm. Nach der Anmeldung bleibt Bildschirm leider schwarz. Das Problem hatte ich schon ein mal.</p>
+
+<p>Es scheint an den Rechten gelegen haben. Habe mich im Recoverymodus mit Root-Shell eingeloggt und die Rechte des Home-Orders korrigiert:</p>
+
+<p><code>sudo chown -R BENUTZER:BENUTZER /home/BENUTZER&lt;br /&gt;
+sudo chmod -R u+rwX /home/BENUTZER&lt;br /&gt;
+sudo chmod 600 /home/BENUTZER/.dmrc&lt;br /&gt;
+chmod 755 /home/BENUTZER</code></p>
+
+<p>Danach war einloggen möglich. Auf der Live-CD war die Grafikauflösung besser. Einige Einstellungen wurden jetzt auch nicht übernommen. Versuche die Guest Additions zu installieren. Danach ist das Problem der Auflösung gelöst.</p>
+
+<h3 id="schritt-3-anlegen-eines-neuen-benutzers">Schritt 3: Anlegen eines neuen Benutzers</h3>
+
+<p>Da mit dem Home-Ordner irgendwas nicht ganz stimmt, probiere ich noch das anlegen eines neuen Benutzers bevor ich die ISO auf meiner produktiven Maschine installiere. Anlegen des Kontos schlägt aufgrund einer Zeitüberschreitung fehl. Ich probiere es noch ein Mal. Gleiche Fehlermeldung, trotzdem wird der Benutzer angelegt. Probiere mich als dieser einzuloggen. Funktionier wunderbar. Alles klar, jetzt einen passenden USB-Stick suchen und dann kommt Leenux Suite 4.0.1 auf meine eigene Maschine.</p>
+
+<h3 id="schritt-4-installation-auf-der-hauptmaschine">Schritt 4: Installation auf der Hauptmaschine</h3>
+
+<p>Auf dem Acer passiert das Gleiche: nach dem Einloggen nämlich nichts mehr. Probiere die gleiche Herangehensweise: Rechte über die Superuserkonsole ändern. Zurück kommt, der Ordner könne nicht gefunden werden. Also Live-Disc und nachschauen, was da los ist. Mein Home-Ordner ist wohl noch da, ich bin nicht der Besitzer, also im Recovery Mode Rechte ändern. Vorher muss man übrigens einmal &#8220;Paket reparieren&#8221; durchlaufen lassen, damit die Partitionen ordentlich eingehängt werden. Die Einstellungen wurden nach dem reparieren irgendwie zurückgesetzt, Gnome muss also neu eingerichtet werden.</p>
+
+<p>&nbsp;</p>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>Installationsmedium eignet sich noch nicht wirklich dafür, wofür es gedacht war. Es geht, jedoch ist das bessere Workflow weiterhin die Standardinstallation durchzuführen und anschließend die Pakete der Leenux Suite nachzuinstallieren. Schade, da das einzige Problem der Rechtechaos ist.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-18 12:33:07 &#43;0000 &#43;0000"><a href="/blog/2014/04/18/leenux-suite-4-0-building/">Apr 18, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~11 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/18/leenux-suite-4-0-building/" rel="bookmark" title="Leenux Suite 4.0 Building" itemprop="url">Leenux Suite 4.0 Building</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    
+
+<p>Gegen 23:00 erwache ich aus meinem wohlverdienten Nachmittagsschlaf. <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released/">Ubuntu Gnome 14.04</a> ist inzwischen veröffentlicht worden. Ich ziehe mir <a href="https://wiki.ubuntu.com/UbuntuGNOME/GetUbuntuGNOME">hier</a> über Torrent eine 64-bit Version und gehe raus mit dem Hund. Ab jetzt habe ich 24 Stunden danach muss Leenux 4.0 fertig sein.</p>
+
+<h3 id="24h">-24h</h3>
+
+<p>Bei der Rückkehr stelle ich fest, dass Fortschrittsanzeige des Downloads bei 16,3% ist. Werfe einen Blick auf die inzwischen eingescannte Medienbibliothek des Raspberry Pis, alles scheint funktioniert zu haben. Hole mir Cola und Süßigkeiten, schalte <a href="http://en.wikipedia.org/wiki/Tales_of_Us"><em>Tales of Us</em> von <em>Goldfrap</em></a> ein und beginne mit der Vorbereitung des Systems.</p>
+
+<h3 id="23h">-23h</h3>
+
+<p>Download ist bei 25%. Entscheide mich die Wäsche aufzuhängen.</p>
+
+<h3 id="22-1h">-22,1h</h3>
+
+<p>Der Download ist fertig. Ich starte und binde die Gnome-ISO in den <a href="http://sourceforge.net/projects/uck/">UCK</a>. Parallel werden schon mal die aktuellen DEBs für Eterprice Stack runtergeladen. UCK bittet mich ein Paar grundsätzliche Entscheidungen zu treffen, anschließend muss der schwache Prozessor ordentlich arbeiten. Nun brauche ich meine <a href="http://goo.gl/dQwBUq">Dokumentationsdatei</a>.</p>
+
+<p>Im Home-Ordner meines Systems befindet sich ein neuer Ordner <code>/tmp/remaster-root/</code>. Dort befindet sich das root-Dateisystem des zukünftigen Systems, Als erstes bereite ich ein Paar Sachen vor. In meinem eigenen System starte ich Dolphin mit Superrechten und ersetze den Ordner <code>/etc/skel/</code> mit meinem, den ich schon vorher vorbereitet habe. Dort befinden sich Einstellungen, Ordnerstruktur und Dateien, die auf dem neuen System für jeden neuen Benutzer angelegt werden sollen.</p>
+
+<h1 id="enterprice-stack-4-0">Enterprice Stack 4.0</h1>
+
+<p>Folgende Pakete möchte ich in meinem System haben, die nicht über Repos installierbar sind:</p>
+
+<p><a href="http://www.google.de/intl/de/chrome/browser/">google-chrome-stable</a></p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></p>
+
+<p><a href="http://www.draftsight.com/download-linux-ubuntu">DraftSight</a></p>
+
+<p><a href="http://www.skype.com/de/download-skype/skype-for-computer/">skype</a></p>
+
+<p><del><a href="https://www.dropbox.com/install">Dropbox</a></del></p>
+
+<p><a href="https://github.com/Nano77/gdm3setup">GDM3Setup</a></p>
+
+<p><a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">Wuala</a></p>
+
+<p>Ich lade die Pakete herunter und lege sie ebenfalls unter <code>/etc/skel/</code> ab.</p>
+
+<p>Jetzt starte ich einen Superusernautilus in der Konsole von Leenux:</p>
+
+<p><code>sudo nautilus</code></p>
+
+<p><del datetime="2014-04-17T23:29:52+00:00">Von dort aus navigiere ich in den selben Ordner und installiere die Pakete über GUI. DraftSight verweigert sich, da falsche Architektur. </del> Dem Software-Center gefallen die Rechte irgendwie nicht. Also überspringe ich das Ganze und werde es später nochmals versuchen.</p>
+
+<h1 id="source-stack">Source Stack</h1>
+
+<p>Als nächstes binde ich externe Quellen ein, die zwingend für die Installation der Suite benötigt werden:</p>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<p>Mit folgendem befehl aktiviere ich noch die Partnerquellen und aktualisiere die Paketlisten:</p>
+
+<p><code>sudo sed -i &quot;/^# deb .*partner/ s/^# //&quot; /etc/apt/sources.list &amp;&amp; sudo apt-get update</code></p>
+
+<h1 id="system-stack">System Stack</h1>
+
+<p>Nun wird ein Stack mit diversen Systemwerkzeugen (900 MB) installiert:</p>
+
+<p>``Gegen 23:00 erwache ich aus meinem wohlverdienten Nachmittagsschlaf. <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released/">Ubuntu Gnome 14.04</a> ist inzwischen veröffentlicht worden. Ich ziehe mir <a href="https://wiki.ubuntu.com/UbuntuGNOME/GetUbuntuGNOME">hier</a> über Torrent eine 64-bit Version und gehe raus mit dem Hund. Ab jetzt habe ich 24 Stunden danach muss Leenux 4.0 fertig sein.</p>
+
+<h3 id="24h-1">-24h</h3>
+
+<p>Bei der Rückkehr stelle ich fest, dass Fortschrittsanzeige des Downloads bei 16,3% ist. Werfe einen Blick auf die inzwischen eingescannte Medienbibliothek des Raspberry Pis, alles scheint funktioniert zu haben. Hole mir Cola und Süßigkeiten, schalte <a href="http://en.wikipedia.org/wiki/Tales_of_Us"><em>Tales of Us</em> von <em>Goldfrap</em></a> ein und beginne mit der Vorbereitung des Systems.</p>
+
+<h3 id="23h-1">-23h</h3>
+
+<p>Download ist bei 25%. Entscheide mich die Wäsche aufzuhängen.</p>
+
+<h3 id="22-1h-1">-22,1h</h3>
+
+<p>Der Download ist fertig. Ich starte und binde die Gnome-ISO in den <a href="http://sourceforge.net/projects/uck/">UCK</a>. Parallel werden schon mal die aktuellen DEBs für Eterprice Stack runtergeladen. UCK bittet mich ein Paar grundsätzliche Entscheidungen zu treffen, anschließend muss der schwache Prozessor ordentlich arbeiten. Nun brauche ich meine <a href="http://goo.gl/dQwBUq">Dokumentationsdatei</a>.</p>
+
+<p>Im Home-Ordner meines Systems befindet sich ein neuer Ordner <code>/tmp/remaster-root/</code>. Dort befindet sich das root-Dateisystem des zukünftigen Systems, Als erstes bereite ich ein Paar Sachen vor. In meinem eigenen System starte ich Dolphin mit Superrechten und ersetze den Ordner <code>/etc/skel/</code> mit meinem, den ich schon vorher vorbereitet habe. Dort befinden sich Einstellungen, Ordnerstruktur und Dateien, die auf dem neuen System für jeden neuen Benutzer angelegt werden sollen.</p>
+
+<h1 id="enterprice-stack-4-0-1">Enterprice Stack 4.0</h1>
+
+<p>Folgende Pakete möchte ich in meinem System haben, die nicht über Repos installierbar sind:</p>
+
+<p><a href="http://www.google.de/intl/de/chrome/browser/">google-chrome-stable</a></p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></p>
+
+<p><a href="http://www.draftsight.com/download-linux-ubuntu">DraftSight</a></p>
+
+<p><a href="http://www.skype.com/de/download-skype/skype-for-computer/">skype</a></p>
+
+<p><del><a href="https://www.dropbox.com/install">Dropbox</a></del></p>
+
+<p><a href="https://github.com/Nano77/gdm3setup">GDM3Setup</a></p>
+
+<p><a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">Wuala</a></p>
+
+<p>Ich lade die Pakete herunter und lege sie ebenfalls unter <code>/etc/skel/</code> ab.</p>
+
+<p>Jetzt starte ich einen Superusernautilus in der Konsole von Leenux:</p>
+
+<p><code>sudo nautilus</code></p>
+
+<p><del datetime="2014-04-17T23:29:52+00:00">Von dort aus navigiere ich in den selben Ordner und installiere die Pakete über GUI. DraftSight verweigert sich, da falsche Architektur. </del> Dem Software-Center gefallen die Rechte irgendwie nicht. Also überspringe ich das Ganze und werde es später nochmals versuchen.</p>
+
+<h1 id="source-stack-1">Source Stack</h1>
+
+<p>Als nächstes binde ich externe Quellen ein, die zwingend für die Installation der Suite benötigt werden:</p>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<p>Mit folgendem befehl aktiviere ich noch die Partnerquellen und aktualisiere die Paketlisten:</p>
+
+<p><code>sudo sed -i &quot;/^# deb .*partner/ s/^# //&quot; /etc/apt/sources.list &amp;&amp; sudo apt-get update</code></p>
+
+<h1 id="system-stack-1">System Stack</h1>
+
+<p>Nun wird ein Stack mit diversen Systemwerkzeugen (900 MB) installiert:</p>
+
+<p>``</p>
+
+<h3 id="21h">-21h</h3>
+
+<p>Da einige geplante Pakete nicht installiert werden konnten, habe ich den Verdacht, dass die Aktivierung der Partnerquellen nicht so richtig geklappt hat. Ich passe meine sources.list gemäß <a href="http://wiki.ubuntuusers.de/sources.list">Ubuntuusers</a> an.</p>
+
+<p><code>sudo gedit /etc/apt/sources.list</code></p>
+
+<p>Dann probiere ich nochmals den System Stack zu installieren und es sieht besser aus:</p>
+
+<p><code>sudo apt-get update</code></p>
+
+<p>und</p>
+
+<p>```Gegen 23:00 erwache ich aus meinem wohlverdienten Nachmittagsschlaf. <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released/">Ubuntu Gnome 14.04</a> ist inzwischen veröffentlicht worden. Ich ziehe mir <a href="https://wiki.ubuntu.com/UbuntuGNOME/GetUbuntuGNOME">hier</a> über Torrent eine 64-bit Version und gehe raus mit dem Hund. Ab jetzt habe ich 24 Stunden danach muss Leenux 4.0 fertig sein.</p>
+
+<h3 id="24h-2">-24h</h3>
+
+<p>Bei der Rückkehr stelle ich fest, dass Fortschrittsanzeige des Downloads bei 16,3% ist. Werfe einen Blick auf die inzwischen eingescannte Medienbibliothek des Raspberry Pis, alles scheint funktioniert zu haben. Hole mir Cola und Süßigkeiten, schalte <a href="http://en.wikipedia.org/wiki/Tales_of_Us"><em>Tales of Us</em> von <em>Goldfrap</em></a> ein und beginne mit der Vorbereitung des Systems.</p>
+
+<h3 id="23h-2">-23h</h3>
+
+<p>Download ist bei 25%. Entscheide mich die Wäsche aufzuhängen.</p>
+
+<h3 id="22-1h-2">-22,1h</h3>
+
+<p>Der Download ist fertig. Ich starte und binde die Gnome-ISO in den <a href="http://sourceforge.net/projects/uck/">UCK</a>. Parallel werden schon mal die aktuellen DEBs für Eterprice Stack runtergeladen. UCK bittet mich ein Paar grundsätzliche Entscheidungen zu treffen, anschließend muss der schwache Prozessor ordentlich arbeiten. Nun brauche ich meine <a href="http://goo.gl/dQwBUq">Dokumentationsdatei</a>.</p>
+
+<p>Im Home-Ordner meines Systems befindet sich ein neuer Ordner <code>/tmp/remaster-root/</code>. Dort befindet sich das root-Dateisystem des zukünftigen Systems, Als erstes bereite ich ein Paar Sachen vor. In meinem eigenen System starte ich Dolphin mit Superrechten und ersetze den Ordner <code>/etc/skel/</code> mit meinem, den ich schon vorher vorbereitet habe. Dort befinden sich Einstellungen, Ordnerstruktur und Dateien, die auf dem neuen System für jeden neuen Benutzer angelegt werden sollen.</p>
+
+<h1 id="enterprice-stack-4-0-2">Enterprice Stack 4.0</h1>
+
+<p>Folgende Pakete möchte ich in meinem System haben, die nicht über Repos installierbar sind:</p>
+
+<p><a href="http://www.google.de/intl/de/chrome/browser/">google-chrome-stable</a></p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></p>
+
+<p><a href="http://www.draftsight.com/download-linux-ubuntu">DraftSight</a></p>
+
+<p><a href="http://www.skype.com/de/download-skype/skype-for-computer/">skype</a></p>
+
+<p><del><a href="https://www.dropbox.com/install">Dropbox</a></del></p>
+
+<p><a href="https://github.com/Nano77/gdm3setup">GDM3Setup</a></p>
+
+<p><a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">Wuala</a></p>
+
+<p>Ich lade die Pakete herunter und lege sie ebenfalls unter <code>/etc/skel/</code> ab.</p>
+
+<p>Jetzt starte ich einen Superusernautilus in der Konsole von Leenux:</p>
+
+<p><code>sudo nautilus</code></p>
+
+<p><del datetime="2014-04-17T23:29:52+00:00">Von dort aus navigiere ich in den selben Ordner und installiere die Pakete über GUI. DraftSight verweigert sich, da falsche Architektur. </del> Dem Software-Center gefallen die Rechte irgendwie nicht. Also überspringe ich das Ganze und werde es später nochmals versuchen.</p>
+
+<h1 id="source-stack-2">Source Stack</h1>
+
+<p>Als nächstes binde ich externe Quellen ein, die zwingend für die Installation der Suite benötigt werden:</p>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<p>Mit folgendem befehl aktiviere ich noch die Partnerquellen und aktualisiere die Paketlisten:</p>
+
+<p><code>sudo sed -i &quot;/^# deb .*partner/ s/^# //&quot; /etc/apt/sources.list &amp;&amp; sudo apt-get update</code></p>
+
+<h1 id="system-stack-2">System Stack</h1>
+
+<p>Nun wird ein Stack mit diversen Systemwerkzeugen (900 MB) installiert:</p>
+
+<p>``Gegen 23:00 erwache ich aus meinem wohlverdienten Nachmittagsschlaf. <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released/">Ubuntu Gnome 14.04</a> ist inzwischen veröffentlicht worden. Ich ziehe mir <a href="https://wiki.ubuntu.com/UbuntuGNOME/GetUbuntuGNOME">hier</a> über Torrent eine 64-bit Version und gehe raus mit dem Hund. Ab jetzt habe ich 24 Stunden danach muss Leenux 4.0 fertig sein.</p>
+
+<h3 id="24h-3">-24h</h3>
+
+<p>Bei der Rückkehr stelle ich fest, dass Fortschrittsanzeige des Downloads bei 16,3% ist. Werfe einen Blick auf die inzwischen eingescannte Medienbibliothek des Raspberry Pis, alles scheint funktioniert zu haben. Hole mir Cola und Süßigkeiten, schalte <a href="http://en.wikipedia.org/wiki/Tales_of_Us"><em>Tales of Us</em> von <em>Goldfrap</em></a> ein und beginne mit der Vorbereitung des Systems.</p>
+
+<h3 id="23h-3">-23h</h3>
+
+<p>Download ist bei 25%. Entscheide mich die Wäsche aufzuhängen.</p>
+
+<h3 id="22-1h-3">-22,1h</h3>
+
+<p>Der Download ist fertig. Ich starte und binde die Gnome-ISO in den <a href="http://sourceforge.net/projects/uck/">UCK</a>. Parallel werden schon mal die aktuellen DEBs für Eterprice Stack runtergeladen. UCK bittet mich ein Paar grundsätzliche Entscheidungen zu treffen, anschließend muss der schwache Prozessor ordentlich arbeiten. Nun brauche ich meine <a href="http://goo.gl/dQwBUq">Dokumentationsdatei</a>.</p>
+
+<p>Im Home-Ordner meines Systems befindet sich ein neuer Ordner <code>/tmp/remaster-root/</code>. Dort befindet sich das root-Dateisystem des zukünftigen Systems, Als erstes bereite ich ein Paar Sachen vor. In meinem eigenen System starte ich Dolphin mit Superrechten und ersetze den Ordner <code>/etc/skel/</code> mit meinem, den ich schon vorher vorbereitet habe. Dort befinden sich Einstellungen, Ordnerstruktur und Dateien, die auf dem neuen System für jeden neuen Benutzer angelegt werden sollen.</p>
+
+<h1 id="enterprice-stack-4-0-3">Enterprice Stack 4.0</h1>
+
+<p>Folgende Pakete möchte ich in meinem System haben, die nicht über Repos installierbar sind:</p>
+
+<p><a href="http://www.google.de/intl/de/chrome/browser/">google-chrome-stable</a></p>
+
+<p><a href="https://www.virtualbox.org/wiki/Downloads">virtualbox</a></p>
+
+<p><a href="http://www.draftsight.com/download-linux-ubuntu">DraftSight</a></p>
+
+<p><a href="http://www.skype.com/de/download-skype/skype-for-computer/">skype</a></p>
+
+<p><del><a href="https://www.dropbox.com/install">Dropbox</a></del></p>
+
+<p><a href="https://github.com/Nano77/gdm3setup">GDM3Setup</a></p>
+
+<p><a href="https://cdn.wuala.com/repo/deb/wuala_current_amd64.deb">Wuala</a></p>
+
+<p>Ich lade die Pakete herunter und lege sie ebenfalls unter <code>/etc/skel/</code> ab.</p>
+
+<p>Jetzt starte ich einen Superusernautilus in der Konsole von Leenux:</p>
+
+<p><code>sudo nautilus</code></p>
+
+<p><del datetime="2014-04-17T23:29:52+00:00">Von dort aus navigiere ich in den selben Ordner und installiere die Pakete über GUI. DraftSight verweigert sich, da falsche Architektur. </del> Dem Software-Center gefallen die Rechte irgendwie nicht. Also überspringe ich das Ganze und werde es später nochmals versuchen.</p>
+
+<h1 id="source-stack-3">Source Stack</h1>
+
+<p>Als nächstes binde ich externe Quellen ein, die zwingend für die Installation der Suite benötigt werden:</p>
+
+<p><code>sudo add-apt-repository ppa:jd-team/jdownloader&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/themes&lt;br /&gt;
+sudo add-apt-repository ppa:libreoffice/ppa&lt;br /&gt;
+sudo apt-add-repository ppa:michael-gruz/canon-trunk&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/faba-icon-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gnome-shell-theme&lt;br /&gt;
+sudo add-apt-repository ppa:moka/moka-gtk-theme&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/themes&lt;br /&gt;
+sudo add-apt-repository ppa:noobslab/icons&lt;br /&gt;
+sudo add-apt-repository ppa:andrewsomething/typecatcher&lt;br /&gt;
+sudo add-apt-repository ppa:teejee2008/ppa&lt;br /&gt;
+sudo add-apt-repository ppa:satyajit-happy/themes&lt;br /&gt;
+sudo add-apt-repository ppa:webupd8team/tor-browser&lt;br /&gt;
+sudo apt-add-repository ppa:freefilesync/ffs&lt;br /&gt;
+sudo add-apt-repository ppa:nilarimogard/webupd8&lt;br /&gt;
+sudo add-apt-repository ppa:thefanclub/grive-tools&lt;br /&gt;
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager</code></p>
+
+<p>Mit folgendem befehl aktiviere ich noch die Partnerquellen und aktualisiere die Paketlisten:</p>
+
+<p><code>sudo sed -i &quot;/^# deb .*partner/ s/^# //&quot; /etc/apt/sources.list &amp;&amp; sudo apt-get update</code></p>
+
+<h1 id="system-stack-3">System Stack</h1>
+
+<p>Nun wird ein Stack mit diversen Systemwerkzeugen (900 MB) installiert:</p>
+
+<p>``</p>
+
+<h3 id="21h-1">-21h</h3>
+
+<p>Da einige geplante Pakete nicht installiert werden konnten, habe ich den Verdacht, dass die Aktivierung der Partnerquellen nicht so richtig geklappt hat. Ich passe meine sources.list gemäß <a href="http://wiki.ubuntuusers.de/sources.list">Ubuntuusers</a> an.</p>
+
+<p><code>sudo gedit /etc/apt/sources.list</code></p>
+
+<p>Dann probiere ich nochmals den System Stack zu installieren und es sieht besser aus:</p>
+
+<p><code>sudo apt-get update</code></p>
+
+<p>und</p>
+
+<p>```</p>
+
+<p>UCK zieht sich weitere 120 MB aus den Quellen und ich passe System Stack in der Dokumentation an.</p>
+
+<h1 id="publish-bundle">Publish Bundle</h1>
+
+<p>Im Publish Bundle sind alle Tools enthalten, die mir beim Schreiben, Erstellen von Printprodukten usw. helfen. Er wiegt ca. 800 MB und lässt sich mit dem folgenden Befehl installieren:</p>
+
+<p><code>sudo apt-get install focuswriter libreoffice calibre bluefish gimp gimp-data-extras gimp-plugin-registry inkscape scribus josm mypaint pdfmod qgis typecatcher &lt;del datetime=&quot;2014-04-18T00:32:48+00:00&quot;&gt;acroread&lt;/del&gt; okular libreoffice-style-crystal libreoffice-gnome</code></p>
+
+<h1 id="studio-bundle">Studio Bundle</h1>
+
+<p>Damit wird Leenux Suite für nur 400 MB bunt, laut und sexy:</p>
+
+<p><code>sudo apt-get install easytag soundconverter pyrenamer mp3gain easymp3gain-gtk mixxx audacity openshot lmms blender avidemux vlc browser-plugin-vlc &lt;del datetime=&quot;2014-04-18T00:44:45+00:00&quot;&gt;libdvdcss2&lt;/del&gt; mediathekview</code></p>
+
+<h3 id="15h">-15h</h3>
+
+<h1 id="appearance-bundle">Appearance Bundle</h1>
+
+<p>Für das gute Aussehen der Suite sorgt das Appearance Bundle:</p>
+
+<p><code>sudo apt-get install moka-icon-theme &lt;del datetime=&quot;2014-04-18T00:50:57+00:00&quot;&gt;moka-icon-theme-blue moka-icon-theme-dark&lt;/del&gt; moka-gtk-theme gnome-shell-theme-elegance-colors faba-icon-theme faba-icon-theme-symbolic faba-mono-icons faba-colors moka-gnome-shell-theme libreoffice-style-sifr</code></p>
+
+<h3 id="15h-1">-15h</h3>
+
+<p>Ich ändere die Rechte der Pakete im Eterprice Stack und probiere die Installation erneut. Mit Chrome, Virtualbox, Wuala klapt es diesmal, also lösche ich auch die Pakete aus <code>/etc/skel/</code>. Als ich versuche die x86-Programme aus dem Stack zu forcen meldet sich mein System mich plötzlich ab. Ich muss also gleich von vorne anfangen. Dann binde ich mal die ISO mit UCK ein und gehe mit dem Hund. Vorher sicherheitshalber ein Neustart. Ich lasse mich nicht entmutigen.</p>
+
+<h3 id="11h">-11h</h3>
+
+<p>Bin wieder in dem Punkt, in dem mein Rechner beim letzten Mal versagt hat. Augen zu und durch&#8230; Der gleiche Scheißfehler. Diesmal ist klar, es liegt an draftSight. Skype hat mit &#8211;force-arcitecture -i auch nicht so richtig funktioniert, aber abgemeldet wurde ich bei der Installation von DraftSight. Gut, wieder von vorne, diesmal keine Installation von x86-Programmen erzwingen. Scheiße, wie ärgerlich.</p>
+
+<h3 id="10h">-10h</h3>
+
+<p>So. Wieder hier. Pakete sind weitgehend vollständig installiert. Weiter geht es mit</p>
+
+<h1 id="tweaks">Tweaks</h1>
+
+<h3 id="cursor-themes">Cursor Themes</h3>
+
+<p><code>sudo nautilus</code></p>
+
+<p>Dann lege ich meine Lieblingscursors bei <code>/usr/share/icons</code> ab.</p>
+
+<h3 id="get-libdvdcss">Get libdvdcss</h3>
+
+<p>Folgenden Tweak benötige ich, um meinem System umgang mit DVDs beizubringen. Kann mich zwar nicht erinnern, wann ich das das letzte Mal gebraucht habe, werde das aber noch eine Weile mitschleppen:</p>
+
+<p><code>sudo /usr/share/doc/libdvdread4/install-css.sh</code></p>
+
+<h3 id="ruhe-tweak">Ruhe-Tweak</h3>
+
+<p>Erfahrungsgemäß haben Ubuntu-Fehllermeldungen nichts mir irgendwas zu tun. Es ist recht einfach sie abzuschalten:</p>
+
+<p><code>sudo gedit /etc/default/apport</code></p>
+
+<p>Und dann <code>enabled=1</code> zu <code>enabled=0</code> ändern.</p>
+
+<h3 id="bildschirmhelligkeit">Bildschirmhelligkeit</h3>
+
+<p>Mein ACER Extensa kann mit Default Ubuntu nicht die Bildschirmhelligkeit dimmen. Das fixt man folgendermaßen:</p>
+
+<p><code>sudo gedit /etc/default/grub</code></p>
+
+<p><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;</code> ändere ich zu <code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash acpi_osi=Linux acpi_backlight=legacy&quot;</code>. Dann</p>
+
+<p><code>sudo update-grub</code></p>
+
+<h3 id="nautilus-als-default-filemanager">Nautilus als Default Filemanager</h3>
+
+<p>Dolphin hat in Gnome eine nervige Eigenschaft sich als Standardanwendung aufzudrängen. Ich brauche ihn allerdings nur für einige Netwerkaufgaben, weil Nautilus dort versagt. Also stelle ich sicher, dass Nautilus eine Standardanwendung bleibt:</p>
+
+<p><code>cd /usr/share/applications&lt;br /&gt;
+sudo gedit defaults.list</code></p>
+
+<p>Dann ganz unten einfügen:</p>
+
+<p><code>inode/directory=nautilus.desktop&lt;br /&gt;
+x-directory/normal=nautilus.desktop</code></p>
+
+<h3 id="zusätzliche-schriftarten">Zusätzliche Schriftarten</h3>
+
+<p>Meine Sammlung der Schriftarten kopiere ich in <code>/usr/share/fonts/</code></p>
+
+<h3 id="9h">-9h</h3>
+
+<p>Nun ist praktisch alles fertig. Ich kopiere noch die aktuelle Dokumentation zu der Suite ins <code>/etc/skel/Leenux/</code> und beende anschließend die Konsole.</p>
+
+<h3 id="8h">-8h</h3>
+
+<p>UCK hat jetzt die ganze Geschichte fertiggerechnet. In der Zeit konnte ich praktisch vollständig meine Wohnung aufräumen. Jetzt Daumen drücken, dass die Kiste auch wirklich bootet und funktioniert. Hierzu ein separater Testing-Post.</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-17 16:58:22 &#43;0000 &#43;0000"><a href="/blog/2014/04/17/vorfreude/">Apr 17, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/17/vorfreude/" rel="bookmark" title="Vorfreude" itemprop="url">Vorfreude</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>OK! Es geht nur noch um wenige Stunden, dann sollte <a href="https://wiki.ubuntu.com/TrustyTahr/ReleaseSchedule">Ubuntu Gnome Trusty Tahr</a> online sein. Dann fange ich mit dem Bau der Leenux Suite an. Und blogge live dazu. Das wird ein Spaß. Außerdem musste ich nach einem Update mein <a href="http://www.raspbmc.com/">Raspbmc</a> auf Werkeinstellungen zurücksetzen (nichts gegen den Entwickler, tolle Software, habe bei Einstellungen einiges falsch gemacht). Neueinrichtung habe ich heute Nacht nicht komplett fertig bekommen, habe als etwas für nebenbei, um die Installationszeiten zu überbrücken.</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-15 19:58:42 &#43;0000 &#43;0000"><a href="/blog/2014/04/15/leenux-4-0/">Apr 15, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/15/leenux-4-0/" rel="bookmark" title="Leenux &lt; 4.0" itemprop="url">Leenux &lt; 4.0</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Angefangen hat das ganze mit einer Liste von Paketen, die ich nach einer Neuinstallation über Synaptic auf eine frische Installation von Ubuntu eingespielt habe. Schnell stellte ich fest, dass ich mit den Standardrepos nicht auskomme, um meine Distribution ausreichend zu personalisieren. Also kam eine Liste mit Repositories hinzu. Das Ctrl+C/Cntrl+V wollte ich dann mit einem Bash-Script automatisieren, doch das ging eher schlecht als recht. Also ging ich zu Custom Roms über. Erst mit <a href="https://launchpad.net/ubuntu-builder">Ubuntu Builder</a> (Projekt eingestellt), später mit <a href="http://sourceforge.net/projects/uck/">UCK</a>. Die Liste mit Anpassungen wächst mit der Zeit. Neue Anwendungen fließen in die Suite rein, andere nicht mehr benötigte fliegen raus.</p>
+
+<p>Das ganze dokumentiere ich in einer Google Drive Datei, die unter folgenden Adresse einsehbar ist:</p>
+
+<p><a href="http://goo.gl/dQwBUq">http://goo.gl/dQwBUq</a></p>
+
+<p>Weiterhin suche ich nach einer gut funktionierender Möglichkeit mit einem Script eine Standard Ubuntuinstallation in Leenux Suite zu transformieren.</p>
+
+<p>&nbsp;</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-15 18:04:10 &#43;0000 &#43;0000"><a href="/blog/2014/04/15/zeitplan/">Apr 15, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/15/zeitplan/" rel="bookmark" title="Zeitplan" itemprop="url">Zeitplan</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Ok. Zeitplan steht. Donnerstag nachmittag fliegt Leeni nach Finnland. Samstag früh fahre ich nach Föhr. D. h. es gibt ein Abend und ein Tag, um mich mit der neuen Ubuntu-Version, die in zwei Tagen rauskommt, zu beschäftigen. Muss reichen! Wenn die Tests auf meinem Rechner abgeschlossen sind, darf ich die Geschichte auch auf dem Computer meiner Mama wiederholen.</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-15 18:04:06 &#43;0000 &#43;0000"><a href="/blog/2014/04/15/philosophy-of-leenux/">Apr 15, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~2 minutes
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/15/philosophy-of-leenux/" rel="bookmark" title="Philosophy of Leenux" itemprop="url">Philosophy of Leenux</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Hinter jeder Linuxdistribution steckt meiner Meinung nach ein bestimmtes Mindset, eine Philosophie, fast ein Glaube, der im Zweifel auch mit fundamentalen Argumenten verteidigt wird. Ein Entwickler meint, dass es um maximal viele Features geht, ein anderer, dass das Design möglichst einfach sein soll und/oder Performance das Wichtigste ist. Streitet euch nicht: die meisten dieser Ansichten sind unter bestimmten Umständen legitim und richtig!</p>
+
+<p>Leenux verfolgt einen ähnlichen Ansatz, wie <a href="http://ubuntustudio.org/">Ubuntu Studio</a>. Leenux soll auch eine <strong>Suite</strong> sein<strong>, die für einen kreativen Anwender ein passendes Tool für jeden Zweck bereitstellt.</strong> Zwei Sachen gefallen mir an Ubuntu Studio jedoch nicht: Verwendung von <a href="http://de.wikipedia.org/wiki/JACK_Audio_Connection_Kit">Jack</a> und die Benutzeroberfläche. Musikproduktion hat bei mir nicht so einen hohen Stellenwert, wie Layout und Grafik, <a href="http://lmms.sourceforge.net/">LMMS</a> reicht für meine Zwecke völlig aus. Und LMMS arbeitet wunderbar mit dem <a href="http://www.alsa-project.org/main/index.php/Main_Page">Standardauidosetup von Ubuntu</a>. Außerdem stehe ich auf <a href="https://wiki.gnome.org/Projects/GnomeShell">Gnome Shell</a>. Von allen Oberflächen, die ich je ausprobiert habe (inkl. Mac OS und Windows), ist Gnome 3 die einzige, die gleichermaßen Perfekt für die Bedienung mit Maus, Tastatur, Gafik Tablet oder Touch ist. Nur Icons und das Adwaita Theme gefallen mir nicht.</p>
+
+<p>Ein weiterer Grundsatz von Leenux ist: <strong>nur so weit weg vom Standard wie nötig</strong>. Möglichst wenig Patches ist eine Voraussetzung, weil, ich stets Updates vom Basissystem bekommen möchte, ohne dass alles sofort kaputt geht. Customization Aufwand muss sich für mich immer in Grenzen halten und nachhaltig bleiben. Ich benutze Leenux auch bei der Arbeit im Büro und wenn etwas kaputt geht, muss ich halbe Stunde später nach einer Neuinstallation wieder Arbeitsfähig sein und alle Werkzeuge parat haben, die ich brauche.</p>
+
+<p>Noch eine Sache ist mir wichtig: <strong>das System sollte autonom sein</strong> und für sich selbst sorgen können. Ein Werkzeugkasten am Board, um das System ohne Internetverbindung reparieren und anpassen zu können, ist ein muss.</p>
+
+<p>&nbsp;</p>
+
+  </div>
+</article>
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+         
+		<span class="entry-date date published updated"><time datetime="2014-04-14 20:44:43 &#43;0000 &#43;0000"><a href="/blog/2014/04/14/leenux/">Apr 14, 2014</a></time></span>
+        
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~1 minute
+      </span>
+    </div>
+    
+	<h1 class="entry-title"><a href="/blog/2014/04/14/leenux/" rel="bookmark" title="Leenux" itemprop="url">Leenux</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Seit 2008 habe ich Linux im produktiven Einsatz. Ich habe diverse Distributionen ausprobiert, um dann am Ende doch wieder bei <a href="http://www.ubuntu.com/">Ubuntu</a> zu landen, auch wenn ich immer noch mit großem Interesse <a href="https://www.archlinux.de/">Arch</a> und <a href="http://elementaryos.org/">Elementary</a> beobachte.</p>
+
+<p>Über Jahre habe ich mir, wie wahrscheinlich die meisten Linuxuser ein Stack an Lieblingsanwendungen und Tweaks angesammelt. Hauptsächlich durchs Ausprobieren. Und Ausprobieren macht Linuxsysteme kaputt. Also musste ich oft von vorne beginnen. Dabei habe ich Routinen entwickelt, wie ich von einem Basissystem zu meinem Wunschsystem komme, und das möglichst schnell. Diese Routine ist stets in der Entwicklung: Ziel wäre ein Script oder ein .deb-Paket, was eine Standardinstallation durch alles ergänzt, was ich so brauche, doch dazu fehlt es mir leider an Skills. Derzeit fahre ich am besten damit, mit Hilfe von <a href="http://sourceforge.net/projects/uck/">Ubuntu Customization Kit</a> eigene ISOs zu erstellen, wobei auch diese Lösung Verbesserungspotential hat.</p>
+
+<p>Diese eigene Quasidistribution nenne ich Leenux Suite. Nach der Veröffentlichung von Ubuntu 14.04 in wenigen Tagen werde ich Leenux 4.0 erstellen und die Dokumentation der Entwicklung von Leenux Suite ins Buriversum verlagern.</p>
+
+  </div>
+</article>
+
+
+
+
+
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span> Markdown kills Latex.</span>
+
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/blog\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/blog/js/scripts.min.js"></script>
+
+
+
+</body>
+</html>
+

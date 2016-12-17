@@ -1,0 +1,248 @@
+---
+title: Leenux Suite 6.3
+author: burij
+layout: post
+date: 2015-08-18T18:06:00+00:00
+url: /2015/08/18/leenux-suite-6-3/
+publicize_tumblr_url:
+  - http://.tumblr.com/post/126988258217
+publicize_twitter_user:
+  - burij
+categories:
+  - Linux
+  - Uncategorized
+
+---
+Ab der Version 5.0 läuft unter der Haube von Leenux Suite Arch. Antergos genauer gesagt. Um Antergos auf einen USB Stick zu bekommen macht man Folgendes:
+
+`cd Downloads<br />
+sudo dd if=antergos.iso of=/dev/sdx && sync`
+
+Zunächst müssen für mein Think Pad S440 einige Vorbereitungen getroffen werden.
+
+### WENIGER NACHFRAGEN VON YOURT
+
+`sudo gedit /etc/yaourtrc`
+  
+ändern und unkommentieren:
+  
+`BUILD_NOCONFIRM=1<br />
+EDITFILES=0`
+
+###### ENABLE MULTILIB REPOSITORY
+
+`sudo gedit /etc/pacman.conf`
+  
+und Folgendes unkommentieren:
+  
+`[multilib]<br />
+SigLevel = PackageRequired<br />
+Include = /etc/pacman.d/mirrorlist<br />
+sudo pacman -Syu<br />
+yaourt -S gcc-multilib`
+
+###### ENABLE GDM
+
+`yaourt -S gdm<br />
+sudo systemctl disable lightdm.service<br />
+sudo systemctl enable gdm`
+
+###### DECKELVERHALTEN
+
+`HandleLidSwitch=ignore`
+
+###### UPDATE
+
+`yaourt -Syua<br />
+sudo pacman -Syu`
+  
+Im Gegensatz zu auf Debian-basierten Systemen macht es bei Arch Sinn so wenig Software zu installieren, wie möglich. Darum wird Leenux Suite nun in 3 Ausbaustufen angeboten:
+
+###### MINIMAL:
+
+`yaourt -S google-chrome menulibre smbclient gparted owncloud-client gimp gimp-plugin-registry inkscape agave gimp-extras vlc dropbox nautilus-dropbox gdmap`
+
+###### BASIC:
+
+`yaourt -S freefilesync playonlinux virtualbox focuswriter libreoffice pdfmod typecatcher rawtherapee kdegraphics-okular easytag soundconverter pyrenamer mp3gain audacity handbrake easymp3gain-gtk2 rhythmbox-git masterpdfeditor scribus filezilla typecatcher virtualbox-host-modules nss-mdns hunspell hunspell-en hunspell-de gnome-shell-extension-topicons gnome-user-share numix-circle-icon-theme-git ttf-ms-fonts variety`
+
+###### EXTENSIONS:
+
+`yaourt -S gnome-calendar<br />
+yaourt -S unetbootin<br />
+yaourt -S ipad-charge-git<br />
+yaourt -S kdebase-dolphin<br />
+yaourt -S grive-tools grive<br />
+yaourt -S samba gvfs-smb<br />
+yaourt -S liferea<br />
+yaourt -S calibre<br />
+yaourt -S shotwell<br />
+yaourt -S josm<br />
+yaourt -S mypaint<br />
+yaourt -S freemind<br />
+yaourt -S mixxx<br />
+yaourt -S openshot-bzr<br />
+yaourt -S lmms<br />
+yaourt -S blender<br />
+yaourt -S avidemux<br />
+yaourt -S gpodder-git<br />
+yaourt -S mediathek<br />
+yaourt -S teamviewer<br />
+yaourt -S epiphany<br />
+yaourt -S spotify<br />
+yaourt -S jdownloader2 tor-browser-en<br />
+yaourt -S skype<br />
+yaourt -S acroread acroread-fonts lib32-gtk-engine-murrine lib32-libcanberra<br />
+yaourt -S gnome-packagekit<br />
+yaourt -S california<br />
+yaourt -S corebird<br />
+yaourt -S atom-editor<br />
+yaourt -S ocenaudio<br />
+yaourt -S vco-plugins tap-plugins swh-plugins rev-plugins mcp-plugins<br />
+yaourt -S yandex-disk<br />
+yaourt -S bluefish<br />
+yaourt -S draftsight<br />
+yaourt -S geary<br />
+yaourt -S opera<br />
+yaourt -S gitg-git libgit2-git libgit2-glib-git<br />
+yaourt -S xfburn<br />
+yaourt -S calise-git`
+
+Anschließend müssen einige Nachbereitungen erfolgt werden:
+
+###### POWERMANAGEMENT FÜR LAPTOPS
+
+`yaourt -S tlp<br />
+systemctl enable tlp.service<br />
+sudo gedit /etc/default/tlp<br />
+DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"`
+
+###### NAUTILUS ALS DEFAULT FILEMANAGER
+
+`xdg-mime default org.gnome.Nautilus.desktop inode/directory`
+
+###### DNS-SERVER VON GOOGLE NUTZEN, STATT DEM VOM PROVIDER
+
+ `8.8.8.8, 8.8.4.4 für IPv4`
+  
+und
+  
+`2001:4860:4860::8888, 2001:4860:4860::8844 für IPv6`
+  
+Bei der Methode muss dann noch auf »Automatisch, nur Adressen« umgestellt werden. Jetzt wurde ich die Zensur zugunsten stärkerer Überwachung los.
+
+###### ENTF-TASTE FÜR DAS VERSCHIEBEN IN PAPIERKORB
+
+By default, Files no longer uses the delete key to move files to trash. To revert this, use:
+  
+`gedit .config/nautilus/accels<br />
+;(gtk_accel_path "<Actions>/DirViewActions/Trash" "<Primary>Delete")`
+  
+ändern in
+  
+`(gtk_accel_path "<Actions>/DirViewActions/Trash" "Delete")`
+
+###### PRINTER ZUM LEBEN ERWECKEN
+
+`sudo usermod -aG sys burij<br />
+yaourt -Rdd hplip foomatic-db foomatic-db-engine<br />
+systemctl enable org.cups.cupsd.service<br />
+systemctl enable avahi-daemon.service<br />
+sudo gedit /etc/nsswitch.conf<br />
+hosts: files dns myhostname mdns`
+
+###### NVIDIA-TREIBER INSTALLIEREN
+
+PackmanXG öffnen
+  
+&#8220;Package Manager&#8221;
+  
+Suchen: &#8220;nouveau&#8221;
+  
+Entfernen &#8220;nouveau-dri&#8221; and &#8220;xf86-video-nouveau&#8221;
+  
+Suchen und auswählen &#8220;linux-headers&#8221;
+  
+Scuhen &#8220;nvidia&#8221;
+  
+Passenden Treiber und &#8220;nvidia-utils&#8221; auswählen
+  
+Ausführen
+  
+nVidia X-Server Settings&#8221; starten, um eine automatische Konfigurationsdatei zu schreiben
+
+###### VIRTUALBOX ZUM LAUFEN BRINGEN
+
+`sudo gpasswd -a $USER vboxusers<br />
+sudo modprobe vboxdrv<br />
+sudo gedit /etc/modules-load.d/virtualbox.conf`
+  
+einfügen
+  
+`vboxdrv<br />
+vboxnetadp<br />
+vboxnetflt<br />
+vboxpci`
+
+###### SPLASH-SCREEN und HIBERNATE AKTIVIEREN
+
+`yaourt -S plymouth<br />
+sudo gedit /etc/default/grub<br />
+GRUB_CMDLINE_LINUX_DEFAULT="resume=swap_partition quiet splash"<br />
+sudo gedit /etc/mkinitcpio.conf<br />
+MODULES="i915"<br />
+HOOKS="[...] udev plymouth resume [...]<br />
+sudo mkinitcpio -p linux<br />
+systemctl disable lightdm.service<br />
+systemctl enable lightdm-plymouth.service<br />
+yaourt -S plymouth-theme-paw-arch<br />
+sudo gedit /etc/plymouth/plymouthd.conf<br />
+ShowDelay=0<br />
+sudo plymouth-set-default-theme -R paw-arch<br />
+sudo grub-mkconfig -o /boot/grub/grub.cfg`
+
+###### DROPBOX 3.0.4 INSTALLIEREN
+
+`cd ~<br />
+wget https://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-3.0.4.tar.gz<br />
+tar -xvf dropbox-lnx.x86_64-3.0.4.tar.gz<br />
+~/.dropbox-dist/dropboxd`
+
+###### NETZWERKPROBLEME
+
+`yaourt -S dhclient`
+
+###### MICROSOFT KOMPABILITÄT
+
+`yaourt -S icoutils libwbclient libxslt lib32-mpg123 p11-kit lib32-p11-kit samba wine winetricks wine-mono wine_gecko ttf-ms-fonts lib32-libwbclient lib32-libxslt`
+
+###### FLAT-STYLES
+
+`yaourt -S paper-gtk-theme-git paper-icon-theme-git circle-flat-icons-git gtk-theme-arc-git breeze-icons`
+
+###### GRUB REPARIEREN
+
+In einer Live-Umgebung:
+
+`sudo su<br />
+lsblk -f<br />
+mount /dev/[system-Partition] /mnt<br />
+cd /mnt<br />
+mount -t proc proc /mnt/proc<br />
+mount -t sysfs sys /mnt/sys<br />
+mount -o bind /dev /mnt/dev<br />
+mount -t devpts pts /mnt/dev/pts/<br />
+chroot /mnt<br />
+pacman -S os-prober<br />
+grub-install /dev/sda<br />
+grub-mkconfig -o /boot/grub/grub.cfg`
+
+###### LOGIN-MANAGER ÄNDERN
+
+`yaourt -S lightdm-pantheon-greeter<br />
+sudo gedit /etc/lightdm/lightdm.com<br />
+greeter-session=lightdm-webkit2-greeter`
+  
+ändern in
+  
+`greeter-session=lightdm-pantheon-greeter`

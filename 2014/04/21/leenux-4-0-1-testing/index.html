@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Leenux 4.0.1 Testing &#8211; buriversum</title>
+<meta name="description" content="">
+
+    
+
+
+
+
+
+<meta name="twitter:title" content="Leenux 4.0.1 Testing">
+<meta name="twitter:description" content="minimalistische Persönlichkeitszentrale">
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leenux 4.0.1 Testing">
+<meta property="og:description" content="minimalistische Persönlichkeitszentrale">
+<meta property="og:url" content="https://burij.github.io/blog/2014/04/21/leenux-4-0-1-testing/">
+<meta property="og:site_name" content="buriversum">
+
+
+
+  <meta property="og:updated_time" content="2014-04-21T13:06:16&#43;00:00"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://burij.github.io/blog/2014/04/21/leenux-4-0-1-testing/">
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<meta name="generator" content="Hugo 0.17" />
+
+<script src="/blog/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<link rel="shortcut icon" href="/blog/favicon.png">
+
+
+</head>
+
+<body id="post" >
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/blog/">buriversum</a></li>
+		<li>
+			<a href="#">Info</a>
+			<ul class="dl-submenu">
+			
+				<li>
+					
+					<img src="https://pbs.twimg.com/profile_images/750427486727639040/tKGND85j.jpg" alt="burij's photo" class="author-photo">
+					
+					<h4>burij</h4>
+					<p>trapped in own happits</p>
+				</li>
+				<li><a href="/blog/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="https://twitter.com/burij"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</ul>
+		</li>
+		<li>
+			<a href="#">Artikel</a>
+			<ul class="dl-submenu">
+				<li><a href="/blog/posts/">Neuste Artikel</a></li>
+				<li><a href="/blog/tags/">Alle Tags</a></li>
+				<li><a href="/blog/categories/">Alle Kategorien</a></li>
+			</ul>
+		</li>
+		
+	    <li><a href="http://burij.de" target="_blank">burij.de</a></li>
+	  
+	</ul>
+</nav>
+
+ 
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/blog/2014/04/21/leenux-4-0-1-testing/" rel="bookmark" title="Leenux 4.0.1 Testing">Leenux 4.0.1 Testing</a></h1>
+        
+         
+        <h2><span class="entry-date date published"><time datetime="2014-04-21 13:06:16 &#43;0000 &#43;0000">April 21, 2014</time></span></h2>
+        
+      <p class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        Reading time ~3 minutes
+    </p>
+      </div>
+    </header>
+    <div class="entry-content">
+      
+
+<p>Ok. Eben <a href="https://burij.wordpress.com/2014/04/18/leenux-suite-4-0-building/" title="Leenux Suite 4.0 Building">fertiggebaut</a>. Jetzt ist der Adrenalinspiegel wirklich hoch. Getestet wird in mehreren Stufen. Ich taste mich langsam ran. UCK legt die fertige iso in <code>/home/user/tmp/remaster-new-files/</code> ab. Die Datei ist ordentlich (2,2 GB) schwer.</p>
+
+<h3 id="schritt-1-liveboot-in-der-virtuellen-maschine">Schritt 1: Liveboot in der virtuellen Maschine</h3>
+
+<p>Habe scheinbar eine alte Version von VirtualBox. Werde dann erst updaten. Lege für das Testing eine Maschine mit 1 GB RAM und 15 GB Speicher&#8230;. Icons sind zu sehen&#8230; Ubuntu Gnome Startscreen, meine Maschine strengt sich an und friert für ne weile ein. Dann schwarzer Bildschirm und nach einer gefühlten Ewigkeit sehe ich Panel und einen Installationsdialog. Ich wähle &#8220;Ubuntu Gnome Ausprobieren&#8221; aus. Tatsächlich startet die Live Session. Richtige Gnome-Shell Erweiterungen sind aktiviert, die Software scheint da zu sein, Icons, die ich haben wollte, sind eingestellt. Nur Desktop ist schwarz. Aber das ist ok, sieht fast cool aus. Ich starte Nautilus, Theme ist dunkel, wie es sein sollte, Gnome 3.10 sieht richtig geil aus. Ich denke, dass es mit dem nächsten Schritt weitergehen kann.</p>
+
+<h3 id="schritt-2-installation-in-der-virtuellen-maschine">Schritt 2: Installation in der virtuellen Maschine</h3>
+
+<p>Starte die virtuelle Maschine neu. Diesmal wähle ich &#8220;Installieren&#8221; aus. Die Installation wird wohl ein wenig dauern. Währenddessen räume ich mal die Küche auf. Die Installation läuft problemlos durch. Neustart. Anmeldebildschirm. Nach der Anmeldung bleibt Bildschirm leider schwarz. Das Problem hatte ich schon ein mal.</p>
+
+<p>Es scheint an den Rechten gelegen haben. Habe mich im Recoverymodus mit Root-Shell eingeloggt und die Rechte des Home-Orders korrigiert:</p>
+
+<p><code>sudo chown -R BENUTZER:BENUTZER /home/BENUTZER&lt;br /&gt;
+sudo chmod -R u+rwX /home/BENUTZER&lt;br /&gt;
+sudo chmod 600 /home/BENUTZER/.dmrc&lt;br /&gt;
+chmod 755 /home/BENUTZER</code></p>
+
+<p>Danach war einloggen möglich. Auf der Live-CD war die Grafikauflösung besser. Einige Einstellungen wurden jetzt auch nicht übernommen. Versuche die Guest Additions zu installieren. Danach ist das Problem der Auflösung gelöst.</p>
+
+<h3 id="schritt-3-anlegen-eines-neuen-benutzers">Schritt 3: Anlegen eines neuen Benutzers</h3>
+
+<p>Da mit dem Home-Ordner irgendwas nicht ganz stimmt, probiere ich noch das anlegen eines neuen Benutzers bevor ich die ISO auf meiner produktiven Maschine installiere. Anlegen des Kontos schlägt aufgrund einer Zeitüberschreitung fehl. Ich probiere es noch ein Mal. Gleiche Fehlermeldung, trotzdem wird der Benutzer angelegt. Probiere mich als dieser einzuloggen. Funktionier wunderbar. Alles klar, jetzt einen passenden USB-Stick suchen und dann kommt Leenux Suite 4.0.1 auf meine eigene Maschine.</p>
+
+<h3 id="schritt-4-installation-auf-der-hauptmaschine">Schritt 4: Installation auf der Hauptmaschine</h3>
+
+<p>Auf dem Acer passiert das Gleiche: nach dem Einloggen nämlich nichts mehr. Probiere die gleiche Herangehensweise: Rechte über die Superuserkonsole ändern. Zurück kommt, der Ordner könne nicht gefunden werden. Also Live-Disc und nachschauen, was da los ist. Mein Home-Ordner ist wohl noch da, ich bin nicht der Besitzer, also im Recovery Mode Rechte ändern. Vorher muss man übrigens einmal &#8220;Paket reparieren&#8221; durchlaufen lassen, damit die Partitionen ordentlich eingehängt werden. Die Einstellungen wurden nach dem reparieren irgendwie zurückgesetzt, Gnome muss also neu eingerichtet werden.</p>
+
+<p>&nbsp;</p>
+
+<h3 id="fazit">Fazit</h3>
+
+<p>Installationsmedium eignet sich noch nicht wirklich dafür, wofür es gedacht war. Es geht, jedoch ist das bessere Workflow weiterhin die Standardinstallation durchzuführen und anschließend die Pakete der Leenux Suite nachzuinstallieren. Schade, da das einzige Problem der Rechtechaos ist.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+      <footer class="entry-meta">
+          
+        <span class="entry-tags"></span>
+        
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fburij.github.io%2fblog%2f2014%2f04%2f21%2fleenux-4-0-1-testing%2f" target="_blank" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https%3a%2f%2fburij.github.io%2fblog%2f2014%2f04%2f21%2fleenux-4-0-1-testing%2f" target="_blank" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https%3a%2f%2fburij.github.io%2fblog%2f2014%2f04%2f21%2fleenux-4-0-1-testing%2f" target="_blank" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div>
+
+      </footer>
+    </div>
+    
+    <section id="disqus_thread"><div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'burij';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+    
+  </article>
+</div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span> Markdown kills Latex.</span>
+
+  </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="\/blog\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/blog/js/scripts.min.js"></script>
+
+
+
+</body>
+</html>
+

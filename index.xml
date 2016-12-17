@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>buriversum</title>
+    <link>https://burij.github.io/blog/index.xml</link>
+    <description>Recent content on buriversum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sat, 17 Dec 2016 09:30:27 +0100</lastBuildDate>
+    <atom:link href="https://burij.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Das war ein Jahr ohne Text</title>
+      <link>https://burij.github.io/blog/posts/161217-jahr-ohne-text/</link>
+      <pubDate>Sat, 17 Dec 2016 09:30:27 +0100</pubDate>
+      
+      <guid>https://burij.github.io/blog/posts/161217-jahr-ohne-text/</guid>
+      <description>&lt;p&gt;Ein Jahr Pause, ein Jahr während von mir nichts gekommen ist und ich mich auch ziemlich blöd fand. Nicht, dass ich gar nicht geschrieben hätte. Ich kreierte eine Unmenge an Protokollen und E-Mails. Das ist auch sicher ganz kreativ. Vielleicht aber nichts für den Blog.&lt;/p&gt;
+
+&lt;p&gt;Vielleicht habe ich diese Pause gebraucht. Es ist keine erste gewesen.&lt;/p&gt;
+
+&lt;p&gt;Manchmal braucht es nicht viel. In diesem war, wie so oft bei mir, war der Impuls einer technischen Natur. Ich bin auf einen neuen Texteditor (&lt;a href=&#34;https://wereturtle.github.io/ghostwriter/&#34;&gt;Ghostwriter&lt;/a&gt;) gestoßen. Der Editor ist super, nicht nur, dass er ziemlich minimalistisch anmutet, schicken Vollbildmodus hat, viele Kleinigkeiten, die ich mir ansonsten immer mühsam einstellen oder hinhacken muss, richtig macht, nicht nur das. Er kann auch &lt;a href=&#34;https://www.wikiwand.com/de/Markdown&#34;&gt;Markdown&lt;/a&gt;. Und Markdown ist auch super, vielleicht das Beste, was nach Latex entwickelt worden ist. Es war schon länger ein Traum meine Texte möglichst in Textdateien zu lagern. Also habe ich mich wieder mal mit den CMS-freien Blogsystemen auf Markdown-Basis beschäftigt. &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; ist mir schon vor ein Paar Jahren untergekommen. Mit der aktuellen Version (0.17) ist es nun auch für mich benutzbar geworden. Also habe ich meinen Wordpress-Blog auf Hugo migriert. Ein wenig Arbeit steckt da noch, mein Hugo-Blog ist auch noch nicht online, trotzdem tippe ich schon ein wenig.&lt;/p&gt;
+
+&lt;p&gt;Womöglich sind technische Gründe auch nur vorgeschoben. Und eigentlich geht es darum, dass Dinge passiert sind, die ich aufarbeiten muss. Zwischen den Jahren findet man immer ein Paar Minuten hierfür.&lt;/p&gt;
+
+&lt;p&gt;Das Jahr war selten anstrengend und scheiße. Jetzt werde ich mich noch kurz auf das Positive konzentrieren (es ist eine Drohung). Leeni, Simo und ich sind noch gesund und viel Musik gab es auch. Die Beschäftigung mit der Musik hat mir einiges gegeben und die meisten anderen Hobbys gekostet. Die Zeit ist eben knapp und zu schnell weg.&lt;/p&gt;
+
+&lt;p&gt;Apropos Technik: um den Blog von Wordpress zu Hugo zu migrieren, habe ich zum ersten Mal einen &lt;a href=&#34;https://bitnami.com/stack/wordpress&#34;&gt;Bitnami&lt;/a&gt;-Container eingesetzt. Cool oder?&lt;/p&gt;
+
+&lt;p&gt;An dieser Stelle höre ich mal auf zu schreiben. Es reicht für den Wiedereinstieg. Schön Druck drauf lassen. Stattdessen kümmere ich mich mal um die Blog-Bilder. Die Pfade gehen nämlich beim Export leider flöten.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rex</title>
+      <link>https://burij.github.io/blog/2015/09/16/rex/</link>
+      <pubDate>Wed, 16 Sep 2015 20:45:41 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/09/16/rex/</guid>
+      <description>&lt;p&gt;Zwei Häuser entfernt wohnt eine Junge Frau, vermutlich mit Problemen. Ihr Hund ist vorgestern gestorben. Es geht mir nah. Er war ein Schäferhund und er hat die Junge Dame trotz aller ihrer Probleme über alles geliebt. Ich weiß es, in mein Leben ist auch eine tolle Persönlichkeit von einem Hund getreten.&lt;/p&gt;
+
+&lt;p&gt;Rex hatte zwar kein besonders langes, aber sicherlich gutes Leben, er durfte viel draußen sein und sie, von keiner erkennbaren Erwerbsarbeit belastet, hatte viel Zeit mit ihm verbracht. Ruhe in Frieden Rex, unsere Begegnung war keiner langen Natur, aber wir sahen uns fast täglich, Du wirst mir fehlen, haariger Tollpatsch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Die Riesennetzmaschine</title>
+      <link>https://burij.github.io/blog/2015/09/10/die-riesennetzmaschine/</link>
+      <pubDate>Thu, 10 Sep 2015 19:55:37 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/09/10/die-riesennetzmaschine/</guid>
+      <description>&lt;p&gt;Du, das Endpunkt des Systems, sollst die Riesennetzmaschine huldigen. Die Suchsystemmaschine sieht alles. Du wartest vergeblich auf einen Zeichen von Ihr, starrst auf einen blinkenden Cursor, in der Hoffnung, dass sie Deine tägliche Gaben bemerkt und Dir einen Zeichen entsendet, doch wir alle sind ihre Schäfchen, Du bist nicht auserwählt.&lt;/p&gt;
+
+&lt;p&gt;Du, das Endpunkt der Riesennetzmaschine, sollst sie füttern. Lebe Dein Leben, sie zeigt Dir den Weg.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Leenux Suite 6.3</title>
+      <link>https://burij.github.io/blog/2015/08/18/leenux-suite-6-3/</link>
+      <pubDate>Tue, 18 Aug 2015 18:06:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/08/18/leenux-suite-6-3/</guid>
+      <description>
+
+&lt;p&gt;Ab der Version 5.0 läuft unter der Haube von Leenux Suite Arch. Antergos genauer gesagt. Um Antergos auf einen USB Stick zu bekommen macht man Folgendes:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd Downloads&amp;lt;br /&amp;gt;
+sudo dd if=antergos.iso of=/dev/sdx &amp;amp;&amp;amp; sync&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Zunächst müssen für mein Think Pad S440 einige Vorbereitungen getroffen werden.&lt;/p&gt;
+
+&lt;h5 id=&#34;weniger-nachfragen-von-yourt&#34;&gt;WENIGER NACHFRAGEN VON YOURT&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;sudo gedit /etc/yaourtrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ändern und unkommentieren:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;BUILD_NOCONFIRM=1&amp;lt;br /&amp;gt;
+EDITFILES=0&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;enable-multilib-repository&#34;&gt;ENABLE MULTILIB REPOSITORY&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;sudo gedit /etc/pacman.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;und Folgendes unkommentieren:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[multilib]&amp;lt;br /&amp;gt;
+SigLevel = PackageRequired&amp;lt;br /&amp;gt;
+Include = /etc/pacman.d/mirrorlist&amp;lt;br /&amp;gt;
+sudo pacman -Syu&amp;lt;br /&amp;gt;
+yaourt -S gcc-multilib&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;enable-gdm&#34;&gt;ENABLE GDM&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S gdm&amp;lt;br /&amp;gt;
+sudo systemctl disable lightdm.service&amp;lt;br /&amp;gt;
+sudo systemctl enable gdm&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;deckelverhalten&#34;&gt;DECKELVERHALTEN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;HandleLidSwitch=ignore&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;update&#34;&gt;UPDATE&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -Syua&amp;lt;br /&amp;gt;
+sudo pacman -Syu&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Im Gegensatz zu auf Debian-basierten Systemen macht es bei Arch Sinn so wenig Software zu installieren, wie möglich. Darum wird Leenux Suite nun in 3 Ausbaustufen angeboten:&lt;/p&gt;
+
+&lt;h6 id=&#34;minimal&#34;&gt;MINIMAL:&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S google-chrome menulibre smbclient gparted owncloud-client gimp gimp-plugin-registry inkscape agave gimp-extras vlc dropbox nautilus-dropbox gdmap&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;basic&#34;&gt;BASIC:&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S freefilesync playonlinux virtualbox focuswriter libreoffice pdfmod typecatcher rawtherapee kdegraphics-okular easytag soundconverter pyrenamer mp3gain audacity handbrake easymp3gain-gtk2 rhythmbox-git masterpdfeditor scribus filezilla typecatcher virtualbox-host-modules nss-mdns hunspell hunspell-en hunspell-de gnome-shell-extension-topicons gnome-user-share numix-circle-icon-theme-git ttf-ms-fonts variety&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;extensions&#34;&gt;EXTENSIONS:&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S gnome-calendar&amp;lt;br /&amp;gt;
+yaourt -S unetbootin&amp;lt;br /&amp;gt;
+yaourt -S ipad-charge-git&amp;lt;br /&amp;gt;
+yaourt -S kdebase-dolphin&amp;lt;br /&amp;gt;
+yaourt -S grive-tools grive&amp;lt;br /&amp;gt;
+yaourt -S samba gvfs-smb&amp;lt;br /&amp;gt;
+yaourt -S liferea&amp;lt;br /&amp;gt;
+yaourt -S calibre&amp;lt;br /&amp;gt;
+yaourt -S shotwell&amp;lt;br /&amp;gt;
+yaourt -S josm&amp;lt;br /&amp;gt;
+yaourt -S mypaint&amp;lt;br /&amp;gt;
+yaourt -S freemind&amp;lt;br /&amp;gt;
+yaourt -S mixxx&amp;lt;br /&amp;gt;
+yaourt -S openshot-bzr&amp;lt;br /&amp;gt;
+yaourt -S lmms&amp;lt;br /&amp;gt;
+yaourt -S blender&amp;lt;br /&amp;gt;
+yaourt -S avidemux&amp;lt;br /&amp;gt;
+yaourt -S gpodder-git&amp;lt;br /&amp;gt;
+yaourt -S mediathek&amp;lt;br /&amp;gt;
+yaourt -S teamviewer&amp;lt;br /&amp;gt;
+yaourt -S epiphany&amp;lt;br /&amp;gt;
+yaourt -S spotify&amp;lt;br /&amp;gt;
+yaourt -S jdownloader2 tor-browser-en&amp;lt;br /&amp;gt;
+yaourt -S skype&amp;lt;br /&amp;gt;
+yaourt -S acroread acroread-fonts lib32-gtk-engine-murrine lib32-libcanberra&amp;lt;br /&amp;gt;
+yaourt -S gnome-packagekit&amp;lt;br /&amp;gt;
+yaourt -S california&amp;lt;br /&amp;gt;
+yaourt -S corebird&amp;lt;br /&amp;gt;
+yaourt -S atom-editor&amp;lt;br /&amp;gt;
+yaourt -S ocenaudio&amp;lt;br /&amp;gt;
+yaourt -S vco-plugins tap-plugins swh-plugins rev-plugins mcp-plugins&amp;lt;br /&amp;gt;
+yaourt -S yandex-disk&amp;lt;br /&amp;gt;
+yaourt -S bluefish&amp;lt;br /&amp;gt;
+yaourt -S draftsight&amp;lt;br /&amp;gt;
+yaourt -S geary&amp;lt;br /&amp;gt;
+yaourt -S opera&amp;lt;br /&amp;gt;
+yaourt -S gitg-git libgit2-git libgit2-glib-git&amp;lt;br /&amp;gt;
+yaourt -S xfburn&amp;lt;br /&amp;gt;
+yaourt -S calise-git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Anschließend müssen einige Nachbereitungen erfolgt werden:&lt;/p&gt;
+
+&lt;h6 id=&#34;powermanagement-für-laptops&#34;&gt;POWERMANAGEMENT FÜR LAPTOPS&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S tlp&amp;lt;br /&amp;gt;
+systemctl enable tlp.service&amp;lt;br /&amp;gt;
+sudo gedit /etc/default/tlp&amp;lt;br /&amp;gt;
+DEVICES_TO_DISABLE_ON_STARTUP=&amp;quot;bluetooth&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;nautilus-als-default-filemanager&#34;&gt;NAUTILUS ALS DEFAULT FILEMANAGER&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;xdg-mime default org.gnome.Nautilus.desktop inode/directory&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;dns-server-von-google-nutzen-statt-dem-vom-provider&#34;&gt;DNS-SERVER VON GOOGLE NUTZEN, STATT DEM VOM PROVIDER&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;8.8.8.8, 8.8.4.4 für IPv4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;und&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;2001:4860:4860::8888, 2001:4860:4860::8844 für IPv6&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bei der Methode muss dann noch auf »Automatisch, nur Adressen« umgestellt werden. Jetzt wurde ich die Zensur zugunsten stärkerer Überwachung los.&lt;/p&gt;
+
+&lt;h6 id=&#34;entf-taste-für-das-verschieben-in-papierkorb&#34;&gt;ENTF-TASTE FÜR DAS VERSCHIEBEN IN PAPIERKORB&lt;/h6&gt;
+
+&lt;p&gt;By default, Files no longer uses the delete key to move files to trash. To revert this, use:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gedit .config/nautilus/accels&amp;lt;br /&amp;gt;
+;(gtk_accel_path &amp;quot;&amp;lt;Actions&amp;gt;/DirViewActions/Trash&amp;quot; &amp;quot;&amp;lt;Primary&amp;gt;Delete&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ändern in&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;(gtk_accel_path &amp;quot;&amp;lt;Actions&amp;gt;/DirViewActions/Trash&amp;quot; &amp;quot;Delete&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;printer-zum-leben-erwecken&#34;&gt;PRINTER ZUM LEBEN ERWECKEN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;sudo usermod -aG sys burij&amp;lt;br /&amp;gt;
+yaourt -Rdd hplip foomatic-db foomatic-db-engine&amp;lt;br /&amp;gt;
+systemctl enable org.cups.cupsd.service&amp;lt;br /&amp;gt;
+systemctl enable avahi-daemon.service&amp;lt;br /&amp;gt;
+sudo gedit /etc/nsswitch.conf&amp;lt;br /&amp;gt;
+hosts: files dns myhostname mdns&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;nvidia-treiber-installieren&#34;&gt;NVIDIA-TREIBER INSTALLIEREN&lt;/h6&gt;
+
+&lt;p&gt;PackmanXG öffnen&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;Package Manager&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Suchen: &amp;#8220;nouveau&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Entfernen &amp;#8220;nouveau-dri&amp;#8221; and &amp;#8220;xf86-video-nouveau&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Suchen und auswählen &amp;#8220;linux-headers&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Scuhen &amp;#8220;nvidia&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Passenden Treiber und &amp;#8220;nvidia-utils&amp;#8221; auswählen&lt;/p&gt;
+
+&lt;p&gt;Ausführen&lt;/p&gt;
+
+&lt;p&gt;nVidia X-Server Settings&amp;#8221; starten, um eine automatische Konfigurationsdatei zu schreiben&lt;/p&gt;
+
+&lt;h6 id=&#34;virtualbox-zum-laufen-bringen&#34;&gt;VIRTUALBOX ZUM LAUFEN BRINGEN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;sudo gpasswd -a $USER vboxusers&amp;lt;br /&amp;gt;
+sudo modprobe vboxdrv&amp;lt;br /&amp;gt;
+sudo gedit /etc/modules-load.d/virtualbox.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;einfügen&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;vboxdrv&amp;lt;br /&amp;gt;
+vboxnetadp&amp;lt;br /&amp;gt;
+vboxnetflt&amp;lt;br /&amp;gt;
+vboxpci&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;splash-screen-und-hibernate-aktivieren&#34;&gt;SPLASH-SCREEN und HIBERNATE AKTIVIEREN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S plymouth&amp;lt;br /&amp;gt;
+sudo gedit /etc/default/grub&amp;lt;br /&amp;gt;
+GRUB_CMDLINE_LINUX_DEFAULT=&amp;quot;resume=swap_partition quiet splash&amp;quot;&amp;lt;br /&amp;gt;
+sudo gedit /etc/mkinitcpio.conf&amp;lt;br /&amp;gt;
+MODULES=&amp;quot;i915&amp;quot;&amp;lt;br /&amp;gt;
+HOOKS=&amp;quot;[...] udev plymouth resume [...]&amp;lt;br /&amp;gt;
+sudo mkinitcpio -p linux&amp;lt;br /&amp;gt;
+systemctl disable lightdm.service&amp;lt;br /&amp;gt;
+systemctl enable lightdm-plymouth.service&amp;lt;br /&amp;gt;
+yaourt -S plymouth-theme-paw-arch&amp;lt;br /&amp;gt;
+sudo gedit /etc/plymouth/plymouthd.conf&amp;lt;br /&amp;gt;
+ShowDelay=0&amp;lt;br /&amp;gt;
+sudo plymouth-set-default-theme -R paw-arch&amp;lt;br /&amp;gt;
+sudo grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;dropbox-3-0-4-installieren&#34;&gt;DROPBOX 3.0.4 INSTALLIEREN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;cd ~&amp;lt;br /&amp;gt;
+wget https://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-3.0.4.tar.gz&amp;lt;br /&amp;gt;
+tar -xvf dropbox-lnx.x86_64-3.0.4.tar.gz&amp;lt;br /&amp;gt;
+~/.dropbox-dist/dropboxd&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;netzwerkprobleme&#34;&gt;NETZWERKPROBLEME&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S dhclient&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;microsoft-kompabilität&#34;&gt;MICROSOFT KOMPABILITÄT&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S icoutils libwbclient libxslt lib32-mpg123 p11-kit lib32-p11-kit samba wine winetricks wine-mono wine_gecko ttf-ms-fonts lib32-libwbclient lib32-libxslt&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;flat-styles&#34;&gt;FLAT-STYLES&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S paper-gtk-theme-git paper-icon-theme-git circle-flat-icons-git gtk-theme-arc-git breeze-icons&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;grub-reparieren&#34;&gt;GRUB REPARIEREN&lt;/h6&gt;
+
+&lt;p&gt;In einer Live-Umgebung:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo su&amp;lt;br /&amp;gt;
+lsblk -f&amp;lt;br /&amp;gt;
+mount /dev/[system-Partition] /mnt&amp;lt;br /&amp;gt;
+cd /mnt&amp;lt;br /&amp;gt;
+mount -t proc proc /mnt/proc&amp;lt;br /&amp;gt;
+mount -t sysfs sys /mnt/sys&amp;lt;br /&amp;gt;
+mount -o bind /dev /mnt/dev&amp;lt;br /&amp;gt;
+mount -t devpts pts /mnt/dev/pts/&amp;lt;br /&amp;gt;
+chroot /mnt&amp;lt;br /&amp;gt;
+pacman -S os-prober&amp;lt;br /&amp;gt;
+grub-install /dev/sda&amp;lt;br /&amp;gt;
+grub-mkconfig -o /boot/grub/grub.cfg&lt;/code&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;login-manager-ändern&#34;&gt;LOGIN-MANAGER ÄNDERN&lt;/h6&gt;
+
+&lt;p&gt;&lt;code&gt;yaourt -S lightdm-pantheon-greeter&amp;lt;br /&amp;gt;
+sudo gedit /etc/lightdm/lightdm.com&amp;lt;br /&amp;gt;
+greeter-session=lightdm-webkit2-greeter&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ändern in&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;greeter-session=lightdm-pantheon-greeter&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multitasking ist das Gegenteil von Konzentration</title>
+      <link>https://burij.github.io/blog/2015/07/19/multitasking-ist-das-gegenteil-von-konzentration/</link>
+      <pubDate>Sun, 19 Jul 2015 15:46:45 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/07/19/multitasking-ist-das-gegenteil-von-konzentration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haltung haben</title>
+      <link>https://burij.github.io/blog/2015/07/08/haltung-haben/</link>
+      <pubDate>Wed, 08 Jul 2015 18:43:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/07/08/haltung-haben/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Über die restlichen moralischen Säulen meines Charakters.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Pubertät hat mich fundamentalisiert. Mit Vierzehn war ich links, an der Grenze zur Radikalität, verfahrener Atheist und Fortschrittsgläubiger. Mit Siebzehn kam Existenzialismus hinzu, wobei im Nachhinein betrachtet, ich diesen nie gelebt habe, was wirklich absurd ist.&lt;/p&gt;
+
+&lt;p&gt;Mit Anfang zwanzig musste ich dann letztendlich hinnehmen, die Welt endgültig und bis ins kleinste Detail verstanden zu haben. Fatalerweise viel diese Erkenntnis mit meinem Ausleben des vermeintlich rationalen Sexismus.&lt;/p&gt;
+
+&lt;p&gt;Mein Gott, bin ich den Menschen auf den Sack gegangen. Leider konnte ich auch schon immer gut argumentieren und überzeugte einige verlorene Seelen von mir und meiner Lebenseinstellung. Spuren dieser Tage holen mich auch heute noch auf.&lt;/p&gt;
+
+&lt;p&gt;Es kam nie zu einem Bruch. Die felsenfesten Ansichten fingen nie an zu bröckeln, sonder wurden im Laufe der Zeit an der einen oder anderen Stelle weicher. Ich lernte gutmütige, wohlhabende und religiöse Menschen. Die Kombination, die in meinem von Ideologien geprägten Weltbild eigentlich nicht vorkommen könnte. Ich fand hin und wieder Freude am Konsum. Ich lernte Linke kennen, die mir unsympathisch erschienen, ich merkte, dass ich intellektuelles Potential habe, für den ich besser entlohnt werden möchte, als andere, die diesen nicht besitzen.&lt;/p&gt;
+
+&lt;p&gt;Das schwierigste war, dass nichts widerlegte mein Weltbild grundsätzlich, aber die Ausnahmen waren so zahlreich, dass sie kaum noch als Ausnahmen gelten konnten. Dabei lassen solche geschlossene Weltbilder, wie meins damals war, eigentlich überhaupt keine Ausnahmen zu. Sie sind eben geschlossen. Interessanterweise fand ich nicht die Ausnahmepersonen in der Menge vorhersehbarer Menschen, sondern kleine Ausnahmen innerhalb fast jeden/jeder der/die ich traf. Nach einer Weile trifft man tatsächlich kaum mehr Menschen, die man nicht einem definierten Typ zuordnen kann. Und dann verhalten Sie sich stets so, wie man es von so einem Typ erwarten würde. Abgesehen von einigen Details. Und das macht jeden, so banal es klingt, irgendwie interessant.&lt;/p&gt;
+
+&lt;p&gt;So lernte ich vollkommen neue gedankliche Konstrukte: leben und leben lassen, Zen, goldene Mitte, parallel existierende Wahrheiten, Konstruktivismus, Skeptizismus, Interessensausgleich, Ressourcenökonomie, Dialektik, Rückzug und viele mehr. Und dann verging das Gefühl die Welt verstanden zu haben, sanft, ganz von alleine, wie ein Schleier.&lt;/p&gt;
+
+&lt;p&gt;Der sechzehnjährige Burij würde mich hassen für den Job, den ich derzeit ausübe. Und der zwanzigjährige für das Leben, das ich führe. Als die übergeordnete Aufgabe meiner Tätigkeit sehe ich Wirtschaftsförderung und Wohlstanderhöhung, ich lebe in einer Eigentumswohnung, in einer monogamen Beziehung mit einer Frau, die dem Glauben mindestens nicht ganz abgeneigt ist. Ein Dackel lebt mit uns. Ist nichts von meinen Überzeugungen, von dem, woran ich glaubte, geblieben?&lt;/p&gt;
+
+&lt;p&gt;Niedergeschriebenen habe ich das, um eben nach der Essenz und dem momentanen Stand meiner Weltanschauung zu suchen. Dann mal los. Ich glaube immer noch nicht an Gott, halte es weiterhin für bescheuert dies zu tun, denke, dass Gründe für die meisten gesellschaftliche Probleme in Religion und Esoterik zu suchen sind. Aber ich bemühe mich, den Menschen ihre Götter zu lassen. Globale Probleme, die nicht aus unwissenschaftlichen Ansichten resultieren, werden von einem zu großem Wohlstandgefälle hervorgerufen. Ich halte Umverteilung, Solidarität und Kohäsion immer noch für tolle Sachen und sehe für kaum ein Problem die Lösung im befreitem Markt. Wirtschaft braucht auch im Sinne der einzelnen Teilnehmer klar definierte Spielregeln, die für alle gelten. Welche Regeln gut sind, weiß aber niemand so genau. Und Globalisierung führt dieses Prinzip at Absurdum, ich sehe nicht das einzelne Staaten sich auf gleiche Regeln einigen könnten; die nationale Abschottung will ich nicht sehen. Man wird mit einer ständiger Nachjustierung und wachsender Komplexität wohl leben und sterben müssen.&lt;/p&gt;
+
+&lt;p&gt;Flüchtlinge machen mir trotz Medienkonsum immer noch keine Angst. Staatliche Überwachung schon. Privatwirtschaftliche aber immer noch irgendwie deutlich weniger, als den meisten Deutschen. Ich finde, dass etwas mehr Anarchie durchaus allen gut tun würde, sich selbst regulieren kann die Gesellschaft genau so wie der Markt aber nicht. Ein gutes System, das es gut genug tut, existiert wahrscheinlich nicht, einzelnen klugen Menschen darf man dies aber auch nicht überlassen. Ganz ok wäre eine gesunde Kombination aus einem leichtgewichtigem robustem System, dass fähigen Menschen ermöglicht in die Führungspositionen zu kommen, sich zu entfalten, zugleich die Korrumpierbarkeit strengstens unterbindet.&lt;/p&gt;
+
+&lt;p&gt;Finanzmärkte finde ich immer noch irgendwie ganz evil und falsch, lebe aber selbst größtenteils auf Pump. Dies ist nicht auflösbar. Sowie alle anderen vermeintlich niedere irrationale Triebe. Drogen, Prostitution, Konsum, Kleinkriminalität, all das braucht Räume und gehört nicht ausgerottet oder verboten. Gefühlt und aus meiner Perspektive Konsum etwas weniger Raum als jetzt, die anderen etwas mehr.&lt;/p&gt;
+
+&lt;p&gt;Technologie, Zukunft und Reisen zum Mond finde ich immer noch cool. Alles neue finde ich aber nicht mehr so großartig. Forschung ist getrieben von wirtschaftlichen und nationalen Interessen und dient leider nicht ausschließlich dem Wohl der Menschen. Was der Wohl der Menschen ist, wusste ich vorher, jetzt habe ich das irgendwie verloren&amp;#8230;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Check Deine Privilegien</title>
+      <link>https://burij.github.io/blog/2015/06/29/check-deine-privilegien/</link>
+      <pubDate>Mon, 29 Jun 2015 18:22:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/06/29/check-deine-privilegien/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Hier eine kritische Betrachtung, die ich für Jan bezüglich eines Blogartikels in Rage geschrieben habe. Ist zwar witzlos ohne Originalartikel, aber den Link finde ich jetzt nicht mehr, ist jetzt so:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Na gut, dann muss ich eben auch mal einen ernsthaft geframeten Beitrag schreiben, statt meiner privilegierten Erwerbstätigkeit nachzugehen.&lt;/p&gt;
+
+&lt;p&gt;Rein aus der Leserperspektive hätte der Artikel deutlich schlanker sein können, mit weniger unnötiger Details und eben auch neutraler geschrieben. Allerdings wählt sie_inx* hier das Werkzeug der teilnehmender Beobachtung, und benennt es auch am Anfang des Artikels [2. Semester, Methoden empirischer Sozialforschung I]. Dabei geht es darum alle subjektiven Eindrücke festzuhalten, um die Störvariablen ihrer Analyse transparent darzustellen. Das bringt, wie Du richtig bemerkt hast, auch ihre Vorurteile ans Licht. Was gut ist, denn sie bleiben nicht im verborgenen, wie bei der konventionellen Berichterstattung. Dort sind sie natürlich auch präsent, aber eben subtil. Man muss der Autorin zugute halten, dass ihre Kritik konstruktiv ist. Sie kritisiert keine Minderheiten, leugnet nicht die in der Tat stattfindende Diskriminierung diverser Gruppen, sondern kritisiert eben die Veranstaltung, die einer »Selbsthilfegruppe« ähnelt. Die Veranstalter geben vor Strategien für einen Dialog mit Diskriminierenden zu entwickeln, die aber eben fatal sind. Sie weist dezent auf ganz wichtige Mängel des Diskurses hin:&lt;/p&gt;
+
+&lt;p&gt;Diskurs wird von überprivilegierten Personen dominiert und damit untergraben. Beispiel von mir: eine homosexuelle linksliberale Beamtin aus Berlin-Mitte, die aus Lifestylegründen eine quer-Feministin ist; mangels des Empfinden struktureller Diskriminierung schreibt sie dem Mangel an Rücksicht und Anteilnahme in ihrer Umgebung sexistische Motive zu. Die Leute, die an diesem Workshop teil nehmen, werden tatsächlich in ihrem Alltag verletzend behandelt. Aber sie vermischen strukturelle Diskriminierung und alltägliche Empathielosigkeit, was der Debatte nicht gut tut und z. T. zu skurrilen Ausprägungen führt. Das erstere muss man m. E. politisch angehen, das zweite persönlich. Dabei hilft es nicht sich dem Dialog zu entziehen oder Humor zu unterbinden. Die Lösung für mehr Rücksicht kann nur soziale Interaktion, Selbstironie und Offenheit sein. Lasst uns grundsätzlich mehr Rücksicht auf einander nehmen, völlig unabhängig von der Zugehörigkeit zu einer Minderheit. Weiße Männer brauchen auch Liebe und Zuneigung!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Art for the Gang</title>
+      <link>https://burij.github.io/blog/2015/03/10/art-for-the-gang/</link>
+      <pubDate>Tue, 10 Mar 2015 16:43:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/03/10/art-for-the-gang/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;2015-01-09-12-15-44-1.jpg&#34; alt=&#34;Gangart&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Genuss beim Verfassen von Texten</title>
+      <link>https://burij.github.io/blog/2015/03/01/genuss-beim-verfassen-von-texten/</link>
+      <pubDate>Sun, 01 Mar 2015 19:54:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/03/01/genuss-beim-verfassen-von-texten/</guid>
+      <description>&lt;p&gt;Schreiben hat zweifelsohne eine meditative Wirkung. Es wird behauptet, dass dieser Effekt sich nur beim handschriftlichen Verfassen von Texten einstellt. Dies kann ich nicht bestätigen. Eine durchschnittliche der Technik zugeneigte Person kann eben auch zum vergleichbaren Schreibgenuss beim elektronischen Verfassen von Texten gelangen. Die Voraussetzungen sind lediglich ein angenehmer minimalistisch gehaltener Editor, schöne Schriftart, Desktop ohne Symbole, ruhiges Bildschirmhintergrund und eine angenehme Tastatur. Ein aufgeräumter Schreibtisch ist ebenso kaum hinderlich.&lt;/p&gt;
+
+&lt;p&gt;Schreiben mit der Hand lag mir nie. Meine ersten Kurzgeschichten schrieb ich auf Papier, es hat mir jedoch nie eine mit dem Verfassen der Texte am Rechner vergleichbare Befriedigung gebracht. Aufgaben in einem schönen Notizbuch notieren, sie abhacken, das ist toll! Doch für das Verfassen der Texte taugt das System nichts. In meinem Kopf herrscht Chaos, so sehen auch die von mir vollgeschriebene Papierblätter aus. Ich will Worte aufschreiben, lesen, löschen, erneut aufschreiben, ersetzen, Text wachsen lassen, Absätze in in ihrer Reihenfolge vertauschen, Überleitungen ändern und am Ende einen Text mit einem schönen Schriftbild und gleichmäßigen Absätzen vor mir haben.&lt;/p&gt;
+
+&lt;p&gt;Daher kommt wohl die leichte Aversion zu Drehbüchern und direkter Rede im Allgemeinen. Sie zerstört das äußere Bild der Texte. Ein Text muss meines Erachtens schön wirken noch bevor er gelesen wird. Wie jede durchschnittliche der Technik zugeneigte Person bewundere ich jedoch Menschen, die in der Lage sind, ihre Gedanken bereits im Kopf derart zu ordnen, dass unter ihren Händen wunderschöne handschriftliche Manuskripte entstehen können. Verdammt sollen sie sein!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatentwicklung</title>
+      <link>https://burij.github.io/blog/2015/02/25/formatentwicklung/</link>
+      <pubDate>Wed, 25 Feb 2015 19:50:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/02/25/formatentwicklung/</guid>
+      <description>&lt;p&gt;Wenn ich ehrlich zu mir selbst bin, dann ist das, was ich im letzten Jahr auf meinem Blog veranstaltet habe, ziemlich öde und kaum zu ertragen. Auch im Vergleich zu dem Jahr davor.&lt;/p&gt;
+
+&lt;p&gt;Klar, die Zeit ist weniger geworden, da spare ich am Schreiben. Aber dies ist nur zum Teil wahr. Ich hatte oft Freizeit und war gezwungen mit dieser Freizeit etwas anzufangen. In seltensten Fällen habe ich mich dann dazu entschlossen einen Text zu verfassen. Das war 2013 auch noch anders. Damals nutzte ich praktisch jede freie Stunde, um an den &lt;a href=&#34;https://burij.wordpress.com/category/berichte/&#34; title=&#34;Berichte&#34;&gt;»Berichten«&lt;/a&gt; zu schrauben. Das ist nämlich der Punkt. Mein Standardformat, in dem eigentlich viel Potential gesteckt hat und das mich dazu gezwungen hat, diszipliniert und strukturiert zu schreiben, habe ich abgewickelt.&lt;/p&gt;
+
+&lt;p&gt;Geblieben sind &lt;a href=&#34;https://burij.wordpress.com/category/sprachspiele/&#34;&gt;»Sprachspiele«&lt;/a&gt;: ein maximal freies Format, kaum zu ertragen beim Lesen, kaum in Griff zu bekommen beim Schreiben, wahrscheinlich auch nur noch bedingt meinem Alter gerecht. &lt;a href=&#34;https://burij.wordpress.com/category/alter-teichweg/&#34;&gt;»Alten Teichweg«&lt;/a&gt; kann ich nur schreiben, wenn echt viel Zeit da ist, wenn die Stimmung mit Melancholie durchtränkt ist, der Geist aber noch irgendwie da. &lt;a href=&#34;https://burij.wordpress.com/category/zwischenrufe/&#34;&gt;»Zwischenrufe«&lt;/a&gt; ist kein Format. &lt;a href=&#34;https://burij.wordpress.com/category/linux/&#34;&gt;»Linux«&lt;/a&gt; ist auch kein Format, mehr ein Notizbuch eines Betriebssystemfetischisten.&lt;/p&gt;
+
+&lt;p&gt;Und mein Leben ist nicht öde, ich habe viel Spaß, könnte auch einiges erzählen. Was ich außerdem möchte, ist an der Grenze zwischen Reportage und Fiktion schreiben ohne die Glaubwürdigkeit zu verlieren. Das braucht einen Rahmen und Regeln.&lt;/p&gt;
+
+&lt;p&gt;Die stressigste Zeit des Umzugs ist auch zu ende, viele Sachen, die organisiert werden mussten, sind in den trockenen Bahnen, ich könnte so einen Projekt eigentlich langsam mal angehen.&lt;/p&gt;
+
+&lt;p&gt;Wichtige Sache, über die ich nachgedacht habe, die eigentlich jedes Format zwingend benötigt, ist ein roter Faden; entlang dieses Fadens muss ich Geschichten, die mir passieren, erzählen, aber mich auch meinen Phantasien hergeben und rumalbern können. Das ist jetzt eine Aufgabe an mich selbst, in den kommenden Wochen etwas pfiffiges und praktisches zu finden, das den oben beschriebenen Ansprüchen genügt.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Leben doch im Griff</title>
+      <link>https://burij.github.io/blog/2015/02/08/leben-doch-im-griff/</link>
+      <pubDate>Sun, 08 Feb 2015 19:38:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/02/08/leben-doch-im-griff/</guid>
+      <description>&lt;p&gt;Vor unserem Umzug fing ich mal an einen Blogeintrag darüber zu schreiben, wie Leeni und ich unser Leben nicht im Griff haben. Darüber, dass die Wohnung wie eine Waffentestanlage aussieht, darüber dass wir nichts für unseren Umzug vorbereitet haben. Ich hatte nie die Gelegenheit den Text zu Ende zu schreiben.&lt;/p&gt;
+
+&lt;p&gt;Dann sind wir von einem Tag auf den anderen erwachsen geworden. Wir hatten Umzug, wie ein Bauprojekt bis ins kleinste Detail durchgeplant und ausgeführt. Rechtzeitig unnötiges Zeug über eBay Kleinanzeigen verscherbelt, Wagen und Hilfe organisiert, Budget zusammengestellt. Ziemlich umfangreiche Entsorgung der Küche hat auch praktisch reibungslos funktioniert. Danke an dieser Stelle an unsere Freunde, Ihr seid toll, die Besten und ein Traum, das man sich nur wünschen kann!&lt;/p&gt;
+
+&lt;p&gt;Und jetzt sitze ich an der Frühstücksbar in unserer neuen gemütlichen Wohnküche, nach einem Sonntag, den wir mal wieder gänzlich mit der Einrichtung unseres neuen Heims verbracht haben. Und ganz scheint sich mein erster Text überholt zu haben.&lt;/p&gt;
+
+&lt;p&gt;Das wichtigste ist aber, dass wir einander haben; Freunde, Familie, Gesundheit und Karriere laufen. Das ist viel. Irgendwann kommen wieder Probleme, aber solange weiß ich den Glück, den ich habe, zu schätzen. Wirklich.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spam und Dialektik</title>
+      <link>https://burij.github.io/blog/2015/02/02/spam-und-dialektik/</link>
+      <pubDate>Mon, 02 Feb 2015 19:00:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/02/02/spam-und-dialektik/</guid>
+      <description>&lt;p&gt;Meine Sprachspieltexte lesen sich zunehmend, wie die Texte der Scam-Kommentare meiner WordPressblogs. Das ist mir neulich aufgefallen. Zum Einen werden diese Kommentartexte immer besser: sie ergeben immer noch keinen Sinn, aber ich brauche zunehmend mehr Zeit um sie als Spam zu identifizieren. Da das Leben dialektisch ist, kann man annehmen, dass meine eigene Texte im gleichen Maße permanent schlechter werden. Ein konsequenter Schritt in diesem Zusammenhang wäre es, aufzuhören zu schreiben und nur noch die Spam-Kommentare als eigene Texte auszugeben. Zumindest werde ich testen, ob etwas spannendes entsteht, wenn man einen von ihnen nimmt und etwas aufpoliert.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ganzkörperweihnachtsmannanzug</title>
+      <link>https://burij.github.io/blog/2015/01/10/ganzkorperweihnachtsmannanzug/</link>
+      <pubDate>Sat, 10 Jan 2015 19:45:11 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/01/10/ganzkorperweihnachtsmannanzug/</guid>
+      <description>&lt;p&gt;Wir (Jan, Leeni, Johannes und Ich) wurden mal eingeladen, um auf einer Geburtstagsparty aufzulegen. Es lief hervorragend, ich war gerade am Zug und ziemlich im Flow. Dann kam der Gastgeber von hinten an mit dem Spruch &amp;gt;&amp;gt;Hey, hör bitte auf, wir würden lieber was von Spotify hören.&amp;lt;&amp;lt;. Was zur Hölle? Er wollte keine elektronische Musik mehr hören. Was zur Hölle?!?&lt;/p&gt;
+
+&lt;p&gt;Wenige Stunden zuvor hatte er uns die Tür in einem Ganzkörperweihnachtsmannanzug aufgemacht. Da dachte ich mir schon, es sei kein gutes Zeichen, aber so etwas konnte nun wirklich niemand erwarten. Da bleibt der Atem einem wirklich in der Lunge stecken. Aber was willst du machen, er ist halt der Gastgeber.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inselkehr</title>
+      <link>https://burij.github.io/blog/2015/01/05/inselkehr/</link>
+      <pubDate>Mon, 05 Jan 2015 15:16:50 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/01/05/inselkehr/</guid>
+      <description>&lt;p&gt;Orte, die zwischen Jahrzehnten liegen, nennt man Heimathafen. Zwischen Hafen und der Havel ist eine lange Grade ohne Pfeil. Beat steht still.&lt;/p&gt;
+
+&lt;p&gt;Inselartig &amp;#8211; Inselrings. Wenn der Bass einsetzt. Median steht neben sich. Schreiben unterwegs ist Reportage und eine weitere Dimension. Feinde für das Leben, Freunde und die Liebe. Früher wäre das nicht passiert.&lt;/p&gt;
+
+&lt;p&gt;Drohnendackel klingt bedrohlich. Es gab eine Regel. Wir wollen doch bloß eine Regel, Du bist Deutscher, Du brauchst Regeln. Grießmühle, wie der Name schon sagt, ist ein Ort wo Grieß gemahlen wird. Förderung tut Rund. Zeig ihm nicht Deinen kleinen Löwen, ansonsten zeige ich Dir meine Schlange. Nur mal wissen, was da ist.&lt;/p&gt;
+
+&lt;p&gt;Was dort ist, bleibt dort.&lt;/p&gt;
+
+&lt;p&gt;Die Stille bricht alle zehn Minuten ein.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://burij.github.io/blog/2015/01/02/1513/</link>
+      <pubDate>Fri, 02 Jan 2015 17:44:00 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2015/01/02/1513/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-1514&#34; src=&#34;http://192.168.10.211/wp-content/uploads/2014/12/2014-10-12-02-24-46.jpg&#34; alt=&#34;2014-10-12 02.24.46&#34; width=&#34;660&#34; height=&#34;410&#34; srcset=&#34;http://192.168.10.211/wp-content/uploads/2014/12/2014-10-12-02-24-46.jpg 1000w, http://192.168.10.211/wp-content/uploads/2014/12/2014-10-12-02-24-46-300x186.jpg 300w, http://192.168.10.211/wp-content/uploads/2014/12/2014-10-12-02-24-46-768x477.jpg 768w&#34; sizes=&#34;(max-width: 660px) 100vw, 660px&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

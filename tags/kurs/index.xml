@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>buriversum</title>
+    <link>https://burij.github.io/blog/tags/kurs/index.xml</link>
+    <description>Recent content on buriversum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <atom:link href="https://burij.github.io/blog/tags/kurs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Weil nicht genügend Projekte in der Pipeline sind…</title>
+      <link>https://burij.github.io/blog/2013/03/08/weil-nicht-genugend-projekte-in-der-pipeline-sind/</link>
+      <pubDate>Fri, 08 Mar 2013 12:45:13 +0000</pubDate>
+      
+      <guid>https://burij.github.io/blog/2013/03/08/weil-nicht-genugend-projekte-in-der-pipeline-sind/</guid>
+      <description>&lt;p&gt;&amp;#8230;werde ich mal wieder ein Versuch unternehmen etwas tiefer in die Programmierung einzusteigen. Ein Anlass war tatsächlich mal ein Newsletter von &lt;a href=&#34;http://www.codecademy.com&#34;&gt;Codecademy&lt;/a&gt;. Hätte auch nicht gedacht, dass Newsletter überhaupt etwas bringen könnten. Jedenfalls warben sie mit einem neuen Kurs in PHP.&lt;/p&gt;
+
+&lt;p&gt;Nachdem ich schon mit JavaScript gescheitert bin (Faulheit?) werde ich das auch mal austesten. Bei &lt;a href=&#34;http://burij.wordpress.com/netzpuren/&#34; title=&#34;Netzpuren&#34;&gt;Netzspuren&lt;/a&gt; kann mein Profil angesehen und wegen mangelndem Fortschritt angeprangert werden.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
