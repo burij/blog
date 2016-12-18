@@ -3605,7 +3605,7 @@ svg:not(:root) {
       transform: rotate(180deg); }
     .dl-menuwrapper li > a:after {
       right: 10px;
-      color: black; }
+      color: rgba(0, 0, 0, 0.15); }
   .dl-menuwrapper .dl-menu {
     margin: 5px 0 0 0;
     position: relative;
@@ -3856,7 +3856,10 @@ body {
   .feature .header-title h2 {
     margin: 0;
     color: #ffff00;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display:inline;
+    background:#000;
+    #color:#fff; }
     @media only screen and (min-width: 48em) {
       .feature .header-title h2 a {
         color: #fff; } }
